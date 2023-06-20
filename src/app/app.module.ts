@@ -5,13 +5,15 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { WelcomePartComponent } from './welcome-part/welcome-part.component';
 import { LetsWorkComponent } from './lets-work/lets-work.component';
+import { SkillsetComponent } from './skillset/skillset.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     WelcomePartComponent,
-    LetsWorkComponent
+    LetsWorkComponent,
+    SkillsetComponent
   ],
   imports: [
     BrowserModule,

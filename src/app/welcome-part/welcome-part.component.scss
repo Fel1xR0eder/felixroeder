@@ -1,4 +1,4 @@
-body {
+.welcome-body {
     background: linear-gradient(179.99deg, #FFFFFF 12.89%, #EAF0FF 91.39%);
     height: 100vh;
     margin-top: -100px;
@@ -53,7 +53,8 @@ body {
     position: absolute;
     width: 95px;
     height: 28px;
-    left: 1350px;
+    left: 75%;
+    right: 25%;
     top: 74vh;
 
     span {
@@ -80,9 +81,8 @@ body {
 
 .half-ellipse {
     position: absolute;
-    width: 206px;
-    height: 206px;
     left: 51%;
     top: 92vh;
+    z-index: 10;
 }
 
