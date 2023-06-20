@@ -6,6 +6,7 @@ import { HeaderComponent } from './header/header.component';
 import { WelcomePartComponent } from './welcome-part/welcome-part.component';
 import { LetsWorkComponent } from './lets-work/lets-work.component';
 import { SkillsetComponent } from './skillset/skillset.component';
+import { MyWorkComponent } from './my-work/my-work.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { SkillsetComponent } from './skillset/skillset.component';
     HeaderComponent,
     WelcomePartComponent,
     LetsWorkComponent,
-    SkillsetComponent
+    SkillsetComponent,
+    MyWorkComponent
   ],
   imports: [
     BrowserModule,
