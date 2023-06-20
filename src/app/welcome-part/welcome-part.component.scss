@@ -1,6 +1,7 @@
 body {
     background: linear-gradient(179.99deg, #FFFFFF 12.89%, #EAF0FF 91.39%);
     height: 100vh;
+    margin-top: -100px;
 
     span {
         color: #5988FF;
@@ -35,13 +36,14 @@ body {
 
 .name-text {
     font-size: 64px;
-    font-family: 'Montserrat';
-
+    font-family: 'montserrat';
 }
 
 .dev-text {
     font-size: 128px;
     font-weight: 600;
+    font-family: 'baloo';
+    line-height: 120%;
 }
 
 .scroll {

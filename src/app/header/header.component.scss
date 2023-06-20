@@ -15,10 +15,16 @@
     }
 }
 
+.links {
+    display: flex;
+    align-items: center;
+}
+
 .links a {
     padding-left: 20px;
     color: #5988FF;
     font-size: 23px;
     text-decoration: none;
     font-family: 'Montserrat';
+    font-weight: 400;
 }

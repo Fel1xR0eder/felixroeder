@@ -1,0 +1,28 @@
+.work-together {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 185px;
+    padding-bottom: 185px;
+}
+
+.work-caption {
+    width: 600px;
+    height: 242px;
+    font-size: 121px;
+    font-weight: 600;
+    font-family: 'baloo';
+    line-height: 120%;
+    color: #5988FF;
+    padding-left: 99px;
+
+}
+
+.work-text {
+    width: 570px;
+    height: 242px;
+    font-size: 23px;
+    font-family: 'montserrat';
+    text-align: center;
+    padding-right: 99px;
+}
