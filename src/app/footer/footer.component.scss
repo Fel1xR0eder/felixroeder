@@ -2,4 +2,56 @@
     background: radial-gradient(71.18% 335.57% at 28.82% -124.4%, #5988FF 6.25%, #5988FF 51.56%, #0043F0 100%);
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    padding-top: 130px;
+    padding-bottom: 130px;
+}
+
+.footer-logo {
+    filter: invert(1);
+
+    img {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+.footer-copyright {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'montserrat';
+    gap: 10px;
+    color: #ffffff;
+
+    span {
+        font-size: 23px;
+        padding-bottom: 35px;
+    }
+
+    a {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 16px;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.social-links {
+    display: flex;
+    gap: 40px;
+
+    a {
+        width: 30px;
+        height: 30px;
+    }
+
+    img {
+        width: 30px;
+        height: 30px;
+    }
 }

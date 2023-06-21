@@ -23,10 +23,11 @@
         <form (submit)="sendMail()" ngNativeValidate #myForm class="contact-form">
             <input required placeholder="Your name" type="text" #nameField>
             <input required placeholder="Your mail" type="email" #mailField>
-            <textarea required placeholder="Your message" cols="20" rows="10" #messageField></textarea>
+            <textarea required disabled draggable="true" placeholder="Your message" cols="20" rows="10" #messageField></textarea>
             <button #sendButton>Say hi!</button>
         </form>
     </div>
     <img class="work-ellipse-9" src="./../../assets/img/work-ellipse-9.png">
+    <img class="work-ellipse-10" src="./../../assets/img/work-ellipse-5.png">
     <img class="up-button" src="./../../assets/img/up-button.png">
 </div>

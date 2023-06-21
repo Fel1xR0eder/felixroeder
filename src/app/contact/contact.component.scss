@@ -8,7 +8,7 @@
 
 .contact-me {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .contact-me-text {
@@ -140,6 +140,12 @@ button {
     position: absolute;
     right: 11%;
     top: 5270px;    
+}
+
+.work-ellipse-10 {
+    position: absolute;
+    right: 22%;
+    top: 5650px;  
 }
 
 .up-button {
