@@ -32,9 +32,15 @@
     }
 }
 
-.skill p {
-    font-family: 'montserrat';
-    font-size: 16px;
-    color: #ffffff;
-    width: 70px;
+.skill {
+    p {
+        font-family: 'montserrat';
+        font-size: 16px;
+        color: #ffffff;
+        width: 70px;
+    }
+
+    &:hover {
+        transform: translateY(-30px);
+    }
 }

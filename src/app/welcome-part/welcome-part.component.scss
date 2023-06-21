@@ -61,11 +61,6 @@
         font-size: 23px;
         font-family: 'Montserrat';
     }
-
-    // img {
-    //     width: 1px;
-    //     height: 500px;
-    // }
 }
 
 .socials-top {
@@ -77,6 +72,10 @@
     right: 100px;
     padding-right: 70px;
     gap: 35px;
+
+    a:hover {
+        transform: translateX(-30px); 
+    }
 }
 
 .half-ellipse {

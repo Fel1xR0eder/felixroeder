@@ -14,7 +14,6 @@
     font-family: 'baloo';
     line-height: 120%;
     color: #5988FF;
-
 }
 
 .work-text {
@@ -54,4 +53,11 @@
     font-family: 'montserrat';
     cursor: pointer;
     filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.15));
+    
+    &:hover {
+        background: linear-gradient(128.94deg, #5988FF -33.96%, #5988FF 36.71%, #0043F0 112.25%);
+        color: #ffffff;
+        transform: scale(1.1);
+        border: none;
+    }
 }

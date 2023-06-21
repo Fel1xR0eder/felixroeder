@@ -7,6 +7,7 @@ import { WelcomePartComponent } from './welcome-part/welcome-part.component';
 import { LetsWorkComponent } from './lets-work/lets-work.component';
 import { SkillsetComponent } from './skillset/skillset.component';
 import { MyWorkComponent } from './my-work/my-work.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { MyWorkComponent } from './my-work/my-work.component';
     WelcomePartComponent,
     LetsWorkComponent,
     SkillsetComponent,
-    MyWorkComponent
+    MyWorkComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

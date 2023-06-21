@@ -18,13 +18,18 @@
 .links {
     display: flex;
     align-items: center;
-}
 
-.links a {
-    padding-left: 20px;
-    color: #5988FF;
-    font-size: 23px;
-    text-decoration: none;
-    font-family: 'Montserrat';
-    font-weight: 400;
+    a {
+        padding-left: 30px;
+        color: #5988FF;
+        font-size: 23px;
+        text-decoration: none;
+        font-family: 'Montserrat';
+        font-weight: 400;
+
+        &:hover {
+            font-weight: bolder;
+            transform: scale(1.1);
+        }
+    }
 }

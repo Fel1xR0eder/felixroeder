@@ -27,3 +27,71 @@
     top: -30px;
     left: 70%;
 }
+
+.work-ellipse-3 {
+    position: absolute;
+    left: 0;
+    top: 3350px;
+}
+
+.all-projects {
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.project {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 100px;
+}
+
+.project-specs {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    padding-left: 50px;
+}
+
+.project-img {
+    width: 700px;
+    object-fit: contain;
+}
+
+.project-span {
+    font-family: 'baloo';
+    font-size: 45px;
+    color: #5988FF;
+}
+
+.project-lang {
+    font-family: 'montserrat';
+    font-size: 23px;
+    color: #5988FF;
+}
+
+.github {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 30px;
+    gap: 10px;
+    width: 137px;
+    height: 58px;
+    border: 2px solid #5988FF;
+    color: #5988FF;
+    filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.15));
+    border-radius: 10px;
+    margin-top: 50px;
+    cursor: pointer;
+    font-size: 23px;
+    font-family: 'montserrat';
+
+    &:hover {
+        background: linear-gradient(128.94deg, #5988FF -33.96%, #5988FF 36.71%, #0043F0 112.25%);
+        color: #ffffff;
+        transform: scale(1.1);
+        border: none;
+    }
+}
