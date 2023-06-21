@@ -1,0 +1,149 @@
+.contact-body {
+    background: linear-gradient(179.99deg, #FFFFFF 12.89%, #EAF0FF 91.39%);
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-bottom: 430px;
+
+}
+
+.contact-me {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-me-text {
+    display: flex;
+    flex-direction: column;
+    width: 475px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px 25px;
+    gap: 10px;
+    width: 617px;
+    height: 50px;
+    background: #ffffff;
+    border: 1px solid #5988FF;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    font-family: 'montserrat';
+    font-size: 16px;
+}
+
+textarea {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px 25px;
+    gap: 10px;
+    width: 617px;
+    height: 200px;
+    background: #ffffff;
+    border: 1px solid #5988FF;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    font-family: 'montserrat';
+    font-size: 16px;
+}
+
+button {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 30px;
+    gap: 10px;
+    width: 181px;
+    height: 58px;
+    border: 2px solid #5988FF;
+    filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.15));
+    border-radius: 10px;
+    font-family: 'montserrat';
+    font-size: 23px;
+    color: #5988FF;
+
+    &:hover {
+        background: linear-gradient(128.94deg, #5988FF -33.96%, #5988FF 36.71%, #0043F0 112.25%);
+        color: #ffffff;
+        transform: scale(1.1);
+        border: none;
+        cursor: pointer;
+    }
+}
+
+.head-span {
+    font-family: 'baloo';
+    font-size: 96px;
+    color: #5988FF;
+    padding-bottom: 90px;
+}
+
+.subhead-span {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 32px;
+    color: #5988FF;
+    padding-bottom: 30px;
+}
+
+.contact-me-span {
+    font-family: 'montserrat';
+    font-size: 16px;
+    padding-bottom: 30px;
+}
+
+.need-me-span {
+    font-family: 'montserrat';
+    font-size: 16px;
+    color: #5988FF;
+}
+
+.fat-span {
+    font-family: 'baloo' !important;
+    padding-left: 8px;
+    color: #5988FF;
+}
+
+.contact-link {
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.work-ellipse-7 {
+    position: absolute;
+    right: 20%;
+    top: 4550px;
+}
+
+.work-ellipse-8 {
+    position: absolute;
+    left: 31%;
+    top: 5460px;     
+}
+
+.work-ellipse-9 {
+    position: absolute;
+    right: 11%;
+    top: 5270px;    
+}
+
+.up-button {
+    position: absolute;
+    top: 5800px;
+    cursor: pointer;
+}

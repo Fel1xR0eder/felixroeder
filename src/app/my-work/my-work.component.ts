@@ -15,19 +15,25 @@ export class MyWorkComponent implements OnInit {
       name: 'Join',
       img: './../../assets/img/join.png',
       language: 'Javascript | CSS | HTML',
-      spec: 'Task manager inspired by the Kanban System.Create and organize tasks using drag and drop functions, assign users and categories. '
+      spec: `Task manager inspired by the Kanban System.
+            Create and organize tasks using drag and drop 
+            functions, assign users and categories.`,
+      link: 'https://github.com/Fel1xR0eder/Join-Kanban-Tool'
     },
     {
       name: 'Sharkie',
       img: './../../assets/img/sharkie.png',
       language: 'Javascript OOP | CSS |HTML',
-      spec: 'Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.'
+      spec: `Jump, run and throw game based on object-oriented approach.
+            Help Pepe to find coins and tabasco salsa to fight against the crazy hen.`,
+      link: 'https://github.com/Fel1xR0eder/Sharkie-Game'
     },
     {
       name: 'Ring of Fire',
       img: './../../assets/img/ring-of-fire.png',
       language: 'Angular | SCSS | HTML | Firebase',
-      spec: 'Popular drinking game as a webapp based on Angular and Firebase'
+      spec: `Popular drinking game as a webapp based on Angular and Firebase`,
+      link: 'https://github.com/Fel1xR0eder/Ringoffire'
     }
   ];
 

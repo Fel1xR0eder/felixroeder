@@ -8,6 +8,8 @@ import { LetsWorkComponent } from './lets-work/lets-work.component';
 import { SkillsetComponent } from './skillset/skillset.component';
 import { MyWorkComponent } from './my-work/my-work.component';
 import { ContactComponent } from './contact/contact.component';
+import { FooterComponent } from './footer/footer.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -17,13 +19,19 @@ import { ContactComponent } from './contact/contact.component';
     LetsWorkComponent,
     SkillsetComponent,
     MyWorkComponent,
-    ContactComponent
+    ContactComponent,
+    FooterComponent
   ],
+
   imports: [
     BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
     AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }

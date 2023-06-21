@@ -1,1 +1,32 @@
-<p>contact works!</p>
+<div class="contact-body">
+    <img class="work-ellipse-7" src="./../../assets/img/work-ellipse-7.png">
+    <img class="work-ellipse-8" src="./../../assets/img/work-ellipse-8.png">
+
+    <div class="contact-me">
+        <div class="contact-me-text">
+
+            <span class="head-span">Contact</span>
+            <span class="subhead-span">Got a problem to solve?</span>
+            <span class="contact-me-span">
+                Contact me through this form, I am interested in hearing you,
+                knowing your ideas and contributing to your
+                projects with my work.
+            </span>
+
+            <span class="need-me-span">Need a Frontend developer?
+                <a class="contact-link" href="#contact">
+                    <span class="fat-span">Contact me!</span>
+                </a>
+            </span>
+        </div>
+
+        <form (submit)="sendMail()" ngNativeValidate #myForm class="contact-form">
+            <input required placeholder="Your name" type="text" #nameField>
+            <input required placeholder="Your mail" type="email" #mailField>
+            <textarea required placeholder="Your message" cols="20" rows="10" #messageField></textarea>
+            <button #sendButton>Say hi!</button>
+        </form>
+    </div>
+    <img class="work-ellipse-9" src="./../../assets/img/work-ellipse-9.png">
+    <img class="up-button" src="./../../assets/img/up-button.png">
+</div>
