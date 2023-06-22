@@ -1,4 +1,4 @@
-<div class="contact-body">
+<div id="contact" class="contact-body">
     <img class="work-ellipse-7" src="./../../assets/img/work-ellipse-7.png">
     <img class="work-ellipse-8" src="./../../assets/img/work-ellipse-8.png">
 
@@ -14,16 +14,14 @@
             </span>
 
             <span class="need-me-span">Need a Frontend developer?
-                <a class="contact-link" href="#contact">
-                    <span class="fat-span">Contact me!</span>
-                </a>
+                <span class="fat-span blink-2"> Contact me! </span>
             </span>
         </div>
 
         <form (submit)="sendMail()" ngNativeValidate #myForm class="contact-form">
-            <input required placeholder="Your name" type="text" #nameField>
-            <input required placeholder="Your mail" type="email" #mailField>
-            <textarea required disabled draggable="true" placeholder="Your message" cols="20" rows="10" #messageField></textarea>
+            <input class="input-name" required placeholder="Your name" type="text" #nameField>
+            <input class="input-mail" required placeholder="Your mail" type="email" #mailField>
+            <textarea required placeholder="Your message" cols="20" rows="10" #messageField></textarea>
             <button #sendButton>Say hi!</button>
         </form>
     </div>

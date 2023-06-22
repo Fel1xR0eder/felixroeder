@@ -1,9 +1,12 @@
 .work-body {
+    padding-top: 185px;
+    padding-bottom: 185px;
+}
+
+.work {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-top: 185px;
-    padding-bottom: 185px;
 }
 
 .work-caption {
@@ -23,22 +26,20 @@
     font-family: 'montserrat';
     text-align: center;
     padding-right: 99px;
+    padding-top: 40px;
 }
 
 .ellipse {
-    position: absolute;
-    top: 1430px;
-    right: 30%;
-    left: 70%;
+    position: relative;
+    padding-right: 20px;
+    margin-top: 120px;
 }
 
 .message-button {
-    position: absolute;
+    position: relative;
     width: 254px;
     height: 58px;
-    left: 66%;
-    right: 33%;
-    top: 1845px;
+    right: -54%;
     border: 2px solid #5988FF;
     border-radius: 10px;
     box-sizing: border-box;
@@ -50,14 +51,39 @@
     gap: 10px;
     color: #5988FF;
     font-size: 23px;
-    font-family: 'montserrat';
+    font-family: "montserrat";
     cursor: pointer;
     filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.15));
-    
+    background: transparent;
+    transition: all 0.5s;
+    overflow: hidden;
+    margin-top: 50px;
+
     &:hover {
         background: linear-gradient(128.94deg, #5988FF -33.96%, #5988FF 36.71%, #0043F0 112.25%);
         color: #ffffff;
         transform: scale(1.1);
         border: none;
+    }
+}
+
+@media (max-width: 1350px) {
+    .work-caption {
+        font-size: 100px;
+        width: unset;
+    }
+
+    .work-text {
+        font-size: 21px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .work-caption {
+        font-size: 80px;
+    }
+
+    .work-text {
+        font-size: 18px;
     }
 }

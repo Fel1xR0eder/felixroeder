@@ -5,7 +5,6 @@
     p {
         font-family: 'montserrat';
         font-size: 23px;
-        width: 670px;
         padding-left: 170px;
     }
 }
@@ -45,15 +44,13 @@
 
 .work-ellipse-5 {
     position: absolute;
-    top: 4170px;
-    left: 250px;
-    z-index: -1;
+    left: 80%
 }
 
 .work-ellipse-6 {
-    position: absolute;
-    top: 4590px;
-    left: 33%;
+    position: relative;
+    top: 10%;
+    left: 11%;
     z-index: -1;
 }
 
@@ -78,11 +75,15 @@
     display: flex;
     flex-direction: column;
     width: 400px;
-    padding-left: 100px;
+    padding-left: 50px;
 
     a {
         text-decoration: none;
     }
+}
+
+.project-specs:nth-child(2) {
+    padding-right: 50px;
 }
 
 .project-img {
@@ -92,6 +93,7 @@
     cursor: pointer;
 
     &:hover {
+        transition: all .5s;
         transform: scale(1.03);
         filter: drop-shadow(15px 50px 15px rgba(0, 0, 0, 0.15));
     }
@@ -112,8 +114,8 @@
 .project-description {
     font-family: 'montserrat';
     text-align: start;
-    width: 300px;
     margin-right: 30px;
+    margin-bottom: 50px;
 }
 
 .github {
@@ -130,15 +132,79 @@
     color: #5988FF;
     filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.15));
     border-radius: 10px;
-    margin-top: 50px;
     cursor: pointer;
     font-size: 23px;
     font-family: 'montserrat';
+    transition: all .5s;
 
     &:hover {
         background: linear-gradient(128.94deg, #5988FF -33.96%, #5988FF 36.71%, #0043F0 112.25%);
         color: #ffffff;
         transform: scale(1.1);
         border: none;
+    }
+}
+
+.link-container {
+    display: flex;
+    gap: 20px;
+}
+
+@media (max-width: 1350px) {
+    .project-img {
+        width: 500px;
+    }
+
+    .project-specs {
+        padding-top: 60px;
+    }
+
+    .work-ellipse-4 {
+        width: 400px;
+    }
+}
+
+@media (max-width: 1350px) {
+    .my-work-body {
+        padding-bottom: 0;
+    }
+
+    .all-projects {
+        margin-bottom: 90px;
+    }
+    
+    .project-img {
+        width: 350px;
+    }
+
+    .project-span {
+        font-size: 35px;
+    }
+
+    .project-lang {
+        font-size: 20px;
+    }
+
+    .project-description {
+        margin-bottom: 20px;
+        font-size: 15px;
+    }
+
+    .work-ellipse-3 {
+        position: relative;
+        left: 0%;
+        top: 0px;
+    }
+
+    .all-projects {
+        margin-top: -350px;
+    }
+
+    .work-ellipse-2 {
+       display: none;
+    }
+
+    .work-ellipse-4 {
+        width: 200px;
     }
 }

@@ -1,4 +1,4 @@
-<div class="my-work-body">
+<div id="mywork" class="my-work-body">
     <span class="head-span">My work</span>
     <img class="work-ellipse-1" src="./../../assets/img/work-ellipse-1.png">
     <p>This is a sample of my work - please feel free to try them out.</p>
@@ -14,7 +14,10 @@
                 <span class="project-span"> {{ project.name}}</span>
                 <span class="project-lang"> {{project.language}} </span>
                 <span class="project-description"> {{ project.spec }} </span>
-                <a target="_blank" [href]="project.link"><button class="github">Github</button></a>
+                <div class="link-container">
+                    <a target="_blank" [href]="project.link"><button class="github">Github</button></a>
+                    <a target="_blank" [href]="project.test"><button class="github">Test</button></a>
+                </div>
             </div>
         </div>
     </div>

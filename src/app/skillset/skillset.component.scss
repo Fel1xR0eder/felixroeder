@@ -1,6 +1,5 @@
 .skill-body {
     background: linear-gradient(128.94deg, #5988FF -33.96%, #5988FF 36.71%, #0043F0 112.25%);
-    height: 630px;
     width: 100vw;
     text-align: center;
     display: flex;
@@ -24,7 +23,7 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 140px;
-    width: 950px;
+    max-width: 1000px;
 
     img {
         width: 70px;
@@ -33,14 +32,26 @@
 }
 
 .skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     p {
         font-family: 'montserrat';
         font-size: 16px;
         color: #ffffff;
-        width: 70px;
+        text-align: center;
     }
 
-    &:hover {
+    &:hover img {
+        transition: all .5s;
         transform: translateY(-30px);
+    }
+}
+
+@media (max-width: 1050px) {
+    .skillset {
+        gap: 100px;
+        min-height: auto;
     }
 }
