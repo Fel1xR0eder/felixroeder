@@ -217,3 +217,25 @@ button {
         display: none;
     }
 }
+
+@media (max-width: 1150px) {
+    .contact-me {
+        padding: 0 50px;
+        gap: 20px
+    }
+
+    .contact-me-span {
+        width: 350px;
+    }
+
+    .contact-me-text {
+        width: 350px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .contact-me {
+        padding: 0 50px;
+        gap: 20px
+    }
+}

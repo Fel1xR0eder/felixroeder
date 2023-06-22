@@ -208,3 +208,9 @@
         width: 200px;
     }
 }
+
+@media (max-width: 1000px) {
+    .project-specs {
+        padding-top: 0;
+    }
+}

@@ -17,6 +17,7 @@
     font-family: 'baloo';
     line-height: 120%;
     color: #5988FF;
+    padding-left: 50px;
 }
 
 .work-text {
@@ -25,14 +26,13 @@
     font-size: 23px;
     font-family: 'montserrat';
     text-align: center;
-    padding-right: 99px;
+    padding-right: 50px;
     padding-top: 40px;
 }
 
 .ellipse {
-    position: relative;
-    padding-right: 20px;
-    margin-top: 120px;
+    position: absolute;
+    padding-left: 5px;
 }
 
 .message-button {
@@ -57,7 +57,6 @@
     background: transparent;
     transition: all 0.5s;
     overflow: hidden;
-    margin-top: 50px;
 
     &:hover {
         background: linear-gradient(128.94deg, #5988FF -33.96%, #5988FF 36.71%, #0043F0 112.25%);
@@ -86,4 +85,16 @@
     .work-text {
         font-size: 18px;
     }
+}
+
+@media (max-width: 1000px) {
+    .work-body {
+        padding-top: 100px !important;
+        padding-bottom: 50px !important;
+    }
+
+    .work-caption {
+        font-size: 70px;
+    }
+
 }
