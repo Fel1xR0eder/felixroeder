@@ -49,10 +49,17 @@
     }
 }
 
+@media (max-width: 1300px) {
+
+    .skillset {
+        padding: 0 70px;
+    }
+}
+
 @media (max-width: 1050px) {
     .skillset {
         gap: 100px;
         min-height: auto;
-        padding: 0 20px;
+        padding: 0 50px;
     }
 }

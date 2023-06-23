@@ -1,33 +1,37 @@
 .work-body {
     padding-top: 185px;
     padding-bottom: 185px;
+    padding-left: 150px;
+    padding-right: 150px;
 }
 
 .work {
     display: flex;
     justify-content: space-around;
+}
+
+.work-right {
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
 .work-caption {
     width: 600px;
-    height: 242px;
+    height: 350px;
     font-size: 121px;
     font-weight: 600;
     font-family: 'baloo';
     line-height: 120%;
     color: #5988FF;
-    padding-left: 50px;
 }
 
 .work-text {
-    width: 570px;
-    height: 242px;
+    width: 450px;
+    height: 300px;
     font-size: 23px;
     font-family: 'montserrat';
     text-align: center;
-    padding-right: 50px;
-    padding-top: 40px;
 }
 
 .ellipse {
@@ -36,10 +40,8 @@
 }
 
 .message-button {
-    position: relative;
     width: 254px;
     height: 58px;
-    right: -54%;
     border: 2px solid #5988FF;
     border-radius: 10px;
     box-sizing: border-box;
@@ -67,6 +69,11 @@
 }
 
 @media (max-width: 1350px) {
+
+    .work-body {
+        padding: 180px 70px
+    }
+
     .work-caption {
         font-size: 100px;
         width: unset;
@@ -84,12 +91,20 @@
 
     .work-text {
         font-size: 18px;
+        height: unset;
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .work-body {
+        padding: 180px 50px
     }
 }
 
 @media (max-width: 1000px) {
     .work-body {
-        padding-top: 100px !important;
+        padding-top: 150px !important;
         padding-bottom: 50px !important;
     }
 

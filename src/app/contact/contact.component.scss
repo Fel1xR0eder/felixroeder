@@ -2,7 +2,7 @@
     background: linear-gradient(179.99deg, #FFFFFF 12.89%, #EAF0FF 91.39%);
     padding-left: 150px;
     padding-right: 150px;
-    padding-bottom: 430px;
+    padding-bottom: 200px;
 
 }
 
@@ -151,7 +151,6 @@ button {
 
 .up-button {
     position: absolute;
-    top: 5800px;
     cursor: pointer;
 }
 
@@ -189,13 +188,7 @@ button {
 
 @media (max-width:1350px) {
     .contact-body {
-        padding-left: 0;
-        padding-right: 0;
         padding-bottom: 90px;
-    }
-
-    .contact-me {
-        padding: 0 100px;
     }
 
     input {
@@ -208,13 +201,19 @@ button {
 
     .up-button {
         position: unset;
-        padding-left: 100px;
     }
 
     .work-ellipse-8,
     .work-ellipse-9,
     .work-ellipse-10 {
         display: none;
+    }
+}
+
+@media (max-width: 1250px) {
+    .contact-body {
+        padding-left: 70px;
+        padding-right: 70px;
     }
 }
 
@@ -225,17 +224,106 @@ button {
     }
 
     .contact-me-span {
-        width: 350px;
+        width: unset;
     }
 
     .contact-me-text {
-        width: 350px;
+        width: unset;
+    }
+}
+
+@media (max-width: 1100px) {
+    .contact-body {
+        padding-left: 50px;
+        padding-right: 50px;
     }
 }
 
 @media (max-width: 1000px) {
     .contact-me {
-        padding: 0 50px;
-        gap: 20px
+        gap: 20px;
+        padding: 0;
+    }
+
+    .contact-me-text {
+        width: 300px;
+    }
+
+    input {
+        width: 350px;
+    }
+
+    textarea {
+        width: 350px;
+        height: 150px;
+    }
+
+    .head-span {
+        font-size: 76px;
+        padding-bottom: 0;
+    }
+
+    .subhead-span {
+        font-size: 24px;
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 950px) {
+    .contact-me {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-me-text {
+        align-items: center;
+        width: 600px;
+    }
+
+    .head-span {
+        font-size: 96px;
+    }
+
+    .subhead-span {
+        font-size: 32px;
+    }
+
+    .need-me-span {
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fat-span {
+        font-size: 24px;
+        padding-top: 10px;
+    }
+
+    .contact-form {
+        padding-top: 20px;
+    }
+
+    input {
+        width: 500px;
+    }
+
+    textarea {
+        width: 500px;
+    }
+
+    .work-ellipse-9 {
+        display: block;
+        top: 5000px;
+    }
+    .work-ellipse-10 {
+        display: block;
+        top: 5200px;
+        left: 5%;
+    }
+
+    .work-ellipse-7 {
+        position: absolute;
+        top: 4400px;
     }
 }

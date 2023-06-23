@@ -48,10 +48,9 @@
 }
 
 .work-ellipse-6 {
-    position: relative;
-    top: 10%;
-    left: 11%;
-    z-index: -1;
+    position: absolute;
+    top: 4660px;
+    left: 20px;
 }
 
 .all-projects {
@@ -151,28 +150,22 @@
 }
 
 @media (max-width: 1350px) {
-    .project-img {
-        width: 500px;
-    }
-
-    .project-specs {
-        padding-top: 60px;
-    }
-
-    .work-ellipse-4 {
-        width: 400px;
-    }
-}
-
-@media (max-width: 1350px) {
     .my-work-body {
         padding-bottom: 0;
+        padding-left: 70px;
+        padding-right: 70px;
+
+        p {
+            padding-left: 0;
+        }
     }
 
     .all-projects {
         margin-bottom: 90px;
+        margin-left: 0;
+        margin-right: 0;
     }
-    
+
     .project-img {
         width: 350px;
     }
@@ -192,7 +185,7 @@
 
     .work-ellipse-3 {
         position: relative;
-        left: 0%;
+        left: -80px;
         top: 0px;
     }
 
@@ -201,16 +194,90 @@
     }
 
     .work-ellipse-2 {
-       display: none;
+        display: none;
     }
 
     .work-ellipse-4 {
         width: 200px;
+    }
+
+    .project-img {
+        width: 500px;
+    }
+
+    .project-specs {
+        padding-top: 60px;
+    }
+
+    .work-ellipse-6 {
+        top: 4180px;
+        width: 150px;
+    }
+
+    .work-ellipse-5 {
+        display: none;
+    }
+
+    .head-span {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 1100px) {
+    .my-work-body {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .all-projects {
+        margin-bottom: 0;
+    }
+
+    .project {
+        margin-bottom: 80px;
     }
 }
 
 @media (max-width: 1000px) {
     .project-specs {
         padding-top: 0;
+    }
+
+    .work-ellipse-6 {
+        top: 3900px;
+    }
+
+    .work-ellipse-4 {
+        top: 3330px;
+    }
+}
+
+@media (max-width: 950px) {
+    .project,
+    .project:nth-child(2) {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-specs {
+        align-items: center;
+    }
+
+    .project-span {
+        text-align: center;
+    }
+
+    .project-lang {
+        text-align: center;
+    }
+
+    .project-description {
+        text-align: center;
+        margin-right: 0;
+        margin-top: 10px;
+    }
+
+    .work-ellipse-4 {
+        width: 110px;
     }
 }
