@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -6,5 +6,28 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
+  @ViewChild('headerLinks') headerLinks: ElementRef;
+
+  public openBurger: boolean = false;
+  menu = false;
+
+  ngOnInit(): void {
+    const menuBtn = document.getElementById('burgerMenu');
+    const mobileMenu = document.getElementById('navbar');
+    const mobileMenuLinks = document.querySelectorAll('.mobile-navbar a');
+
+    menuBtn?.addEventListener('click', () => {
+      menuBtn.classList.toggle('is-active');
+      mobileMenu?.classList.toggle('is-active');
+    });
+
+    mobileMenuLinks?.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu?.classList.remove('is-active');
+        menuBtn?.classList.remove('is-active');
+      });
+    });
+  }
+
 
 }

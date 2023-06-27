@@ -37,6 +37,14 @@ export class MyWorkComponent implements OnInit {
       spec: `Popular drinking game as a webapp based on Angular and Firebase`,
       link: 'https://github.com/Fel1xR0eder/Ringoffire',
       test: ''
+    },
+    {
+      name: 'Simple CRM',
+      img: './../../assets/img/crm.png',
+      language: 'Angular | SCSS | HTML | Firebase',
+      spec: `A very Simple Customer Relationship Management system working with CRUD functionality.`,
+      link: 'https://github.com/Fel1xR0eder/',
+      test: ''
     }
   ];
 
