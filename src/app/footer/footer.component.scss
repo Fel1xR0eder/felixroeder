@@ -94,5 +94,18 @@
         padding-top: 80px;
         padding-bottom: 80px;
     }
+}
 
+@media (max-width: 650px) {
+
+    .footer-body {
+        padding: 20px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-copyright span{
+        font-size: 20px;
+        padding-bottom: 0;
+    }
 }

@@ -113,9 +113,9 @@ a {
 
 @media (max-width: 1000px) {
     .work-body {
-        padding: unset !important;
-        padding-top: 150px !important;
-        padding-bottom: 50px !important;
+        padding: unset;
+        padding-top: 150px;
+        padding-bottom: 50px;
         padding-left: 20px;
         padding-right: 20px;
     }
@@ -126,12 +126,30 @@ a {
 
     .work-text {
         width: unset;
+        margin-bottom: 20px;
     }
 
     .work {
-        justify-content: space-between;
+        flex-direction: column;
         padding-left: 20px;
         padding-right: 20px;
     }
+}
 
+@media (max-width: 700px) {
+    .work {
+        flex-direction: column;
+    }
+
+    .work-caption {
+        height: unset;
+        font-size: 70px;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+
+    .work-body {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
 }

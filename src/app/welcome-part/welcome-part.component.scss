@@ -29,12 +29,12 @@
 .myself {
   position: sticky;
   z-index: 3;
-
   object-fit: cover;
+  max-width: 70vw;
+  width: 70%;
+  top: 95%;
+  min-height: 60vh;
   max-height: 100vh;
-  max-width: 50%;
-  width: 100%;
-  top: 100%;
 }
 
 .introduce {
@@ -134,39 +134,39 @@
 
 @media (max-width: 1850px) {
   .introduce {
-    width: 450px !important;
-    right: 10% !important;
+    width: 450px;
+    right: 10%;
   }
 
   .name-text {
-    font-size: 55px !important;
+    font-size: 55px;
   }
 
   .dev-text {
-    font-size: 80px !important;
+    font-size: 80px;
   }
 }
 
 @media (max-width: 1300px) {
   .welcome-body {
-    padding-left: 70px !important;
-    padding-right: 70px !important;
+    padding-left: 70px;
+    padding-right: 70px;
   }
 
   .introduce {
-    right: 2% !important;
+    right: 2%;
   }
 
   .name-text {
-    font-size: 45px !important;
+    font-size: 45px;
   }
 
   .dev-text {
-    font-size: 75px !important;
+    font-size: 75px;
   }
 
   .socials-top {
-    padding-right: 0 !important;
+    padding-right: 0;
     right: 7%;
   }
 }
@@ -174,38 +174,38 @@
 @media (max-width: 1100px) {
 
   .welcome-body {
-    padding-left: 50px !important;
-    padding-right: 50px !important;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
   .introduce {
-    top: 15% !important;
-    right: 5% !important;
-    width: 350px !important;
+    top: 15%;
+    right: 5%;
+    width: 350px;
   }
 
   .name-text {
-    font-size: 36px !important;
+    font-size: 36px;
   }
 
   .dev-text {
-    font-size: 63px !important;
+    font-size: 63px;
   }
 }
 
 @media (max-width: 900px) {
 
   .introduce {
-    right: 5% !important;
-    width: 300px !important;
+    right: 5%;
+    width: 300px;
   }
 
   .name-text {
-    font-size: 30px !important;
+    font-size: 30px;
   }
 
   .dev-text {
-    font-size: 54px !important;
+    font-size: 54px;
   }
 
   .half-ellipse {
@@ -219,5 +219,47 @@
 
   .scroll {
     left: 71%;
+  }
+}
+
+@media (max-width: 650px) {
+  .welcome-body {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .socials-top {
+    display: none;
+  }
+
+  .scroll {
+    display: none;
+  }
+
+  .header-ellipse {
+    width: 90%;
+  }
+
+  .introduce {
+    top: 15vh;
+    left: 5vw;
+    width: min-content;
+  }
+
+  .name-text {
+    color: whitesmoke !important;
+    font-size: 34px;
+  }
+
+  .dev-text {
+    color: whitesmoke !important;
+    font-size: 53px;
+  }
+
+  .myself {
+    max-width: 90vw;
+    width: unset;
+    top: 95%;
+    min-height: 70vh;
   }
 }

@@ -8,7 +8,7 @@
 
 .contact-me {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .contact-me-text {
@@ -315,15 +315,42 @@ button {
     .work-ellipse-9 {
         display: block;
         top: 5000px;
+        z-index: -1;
     }
     .work-ellipse-10 {
         display: block;
         top: 5200px;
         left: 5%;
+        z-index: -1;
     }
 
     .work-ellipse-7 {
         position: absolute;
         top: 4400px;
+        z-index: -1;
+    }
+}
+
+@media (max-width: 650px) {
+    input {
+        width: 350px;
+    }
+
+    textarea {
+        width: 350px;
+    }
+
+    .work-ellipse-7 {
+        left: 1%;
+    }
+
+    .contact-me-text {
+        width: unset;
+    }
+
+    .contact-body {
+        padding-bottom: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }

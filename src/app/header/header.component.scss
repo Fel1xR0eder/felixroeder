@@ -45,13 +45,12 @@
 }
 
 .burger-menu {
-  position: absolute;
-  right: 50px;
-  top: 50px;
   cursor: pointer;
   border: none;
   background: none;
   display: none;
+  z-index: 9;
+  height: fit-content;
 }
 
 .mobile-navbar {
@@ -226,5 +225,12 @@
       color: #5988FF;
       font-size: 30px !important;
     }
+  }
+}
+
+@media (max-width: 650px) {
+  .header {
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }

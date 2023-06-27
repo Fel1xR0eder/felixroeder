@@ -249,7 +249,7 @@
 
 @media (max-width: 1000px) {
     .project-specs {
-        padding-top: 0;
+        padding-top: 20px;
     }
 
     .work-ellipse-6 {
@@ -296,5 +296,53 @@
 @media (max-width: 700px) {
     .project:nth-child(2n) {
         flex-direction: column;
+    }
+
+    .project-img {
+        width: -webkit-fill-available;
+    }
+
+    .work-ellipse-6 {
+        left: 10px;
+        top: 3530px;
+    }
+}
+
+@media (max-width: 650px) {
+    .project-specs {
+        padding-left: 0;
+        width: 250px;
+    }
+
+    .project-specs:nth-child(2) {
+        padding-right: 0;
+    }
+
+    .work-ellipse-3 {
+        left: -110px;
+    }
+
+    .work-ellipse-6 {
+       display: none;
+    }
+    
+    .work-ellipse-1 {
+        display: none;
+    }
+
+    .work-ellipse-4 {
+        width: 80px;
+        z-index: 0;
+    }
+
+    .my-work-body {
+        padding-top: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .head-span {
+        font-size: 85px;
+        padding-bottom: 0;
     }
 }
