@@ -29,7 +29,7 @@
 .myself {
   position: sticky;
   z-index: 3;
-  height: 980px;
+
   object-fit: cover;
   max-height: 100vh;
   max-width: 50%;
@@ -99,7 +99,7 @@
   position: absolute;
   left: 51%;
   top: 92vh;
-  z-index: 10;
+  z-index: 6;
 }
 
 .blink-2 {

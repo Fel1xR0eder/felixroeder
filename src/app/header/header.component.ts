@@ -15,6 +15,7 @@ export class HeaderComponent {
     const menuBtn = document.getElementById('burgerMenu');
     const mobileMenu = document.getElementById('navbar');
     const mobileMenuLinks = document.querySelectorAll('.mobile-navbar a');
+    const mobileBurger = document.getElementById('burgerMenuMobile');
 
     menuBtn?.addEventListener('click', () => {
       menuBtn.classList.toggle('is-active');
@@ -26,6 +27,10 @@ export class HeaderComponent {
         mobileMenu?.classList.remove('is-active');
         menuBtn?.classList.remove('is-active');
       });
+    });
+    mobileBurger?.addEventListener('click', () => {
+      mobileMenu?.classList.remove('is-active');
+      menuBtn?.classList.remove('is-active');
     });
   }
 

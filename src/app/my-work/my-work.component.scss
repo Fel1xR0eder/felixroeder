@@ -237,6 +237,14 @@
     .project {
         margin-bottom: 80px;
     }
+
+    // .project:nth-child(2n) {
+    //     flex-direction: column;
+    // }
+    .work-ellipse-6 {
+        top: 4140px;
+        z-index: 0;
+    }
 }
 
 @media (max-width: 1000px) {
@@ -255,6 +263,7 @@
 }
 
 @media (max-width: 950px) {
+
     .project,
     .project:nth-child(2) {
         flex-direction: column;
@@ -281,5 +290,11 @@
 
     .work-ellipse-4 {
         width: 110px;
+    }
+}
+
+@media (max-width: 700px) {
+    .project:nth-child(2n) {
+        flex-direction: column;
     }
 }
