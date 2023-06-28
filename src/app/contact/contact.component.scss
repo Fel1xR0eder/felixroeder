@@ -76,12 +76,42 @@ button {
     color: #5988FF;
     transition: all .3s;
 
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        background: rgba(255, 255, 255, 0.5);
+        width: 20px;
+        height: 100%;
+        top: 0;
+        filter: blur(20px);
+        transform: translateX(-100px) skewX(-15deg);
+    }
+
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        background: rgba(255, 255, 255, 0.1);
+        width: 30px;
+        height: 100%;
+        top: 0;
+        filter: blur(5px);
+        transform: translateX(-70px) skewX(-15deg);
+    }
+
     &:hover {
-        background: linear-gradient(128.94deg, #5988FF -33.96%, #5988FF 36.71%, #0043F0 112.25%);
-        color: #ffffff;
-        transform: scale(1.1);
-        border: none;
+        background-image: (linear-gradient(to left, #5988ff, #5988ff));
+        transform: scale(1.2);
         cursor: pointer;
+        color: #ffffff;
+        border: none;
+
+        &::before,
+        &::after {
+            transform: translateX(120px) skewX(-30deg);
+            transition: 0.4s;
+        }
     }
 }
 
@@ -118,14 +148,6 @@ button {
     color: #5988FF;
 }
 
-// .contact-link {
-//     text-decoration: none;
-
-//     &:hover {
-//         text-decoration: underline;
-//     }
-// }
-
 .work-ellipse-7 {
     position: relative;
     left: 86%;
@@ -152,6 +174,12 @@ button {
 .up-button {
     position: absolute;
     cursor: pointer;
+    width: 40px;
+    height: 40px;
+
+    a {
+        display: flex;
+    }
 }
 
 .blink-2 {
@@ -317,6 +345,7 @@ button {
         top: 5000px;
         z-index: -1;
     }
+
     .work-ellipse-10 {
         display: block;
         top: 5200px;

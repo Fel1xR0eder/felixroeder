@@ -12,6 +12,12 @@ export class ContactComponent {
   @ViewChild('messageField') messageField: ElementRef;
   @ViewChild('sendButton') sendButton: ElementRef;
 
+  changeImage: boolean;
+
+  constructor() {
+    this.changeImage = false;
+  }
+
   async sendMail() {
     let nameField = this.nameField.nativeElement;
     let mailField = this.mailField.nativeElement;
@@ -22,9 +28,9 @@ export class ContactComponent {
     mailField.disabled = true;
     messageField.disabled = true;
     sendButton.disbaled = true;
-    
+
     // send mail animation
-    
+
     let fd = new FormData();
     fd.append('name', nameField.value);
     fd.append('mail', mailField.value);

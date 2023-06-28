@@ -21,8 +21,6 @@
 }
 
 .ellipse {
-  // position: relative;
-  // top: 12%;
   display: none;
 }
 
@@ -35,6 +33,7 @@
   top: 95%;
   min-height: 60vh;
   max-height: 100vh;
+  height: 90vh;
 }
 
 .introduce {
@@ -221,6 +220,33 @@
     left: 71%;
   }
 }
+
+@media (max-width: 700px) and (min-height: 1000px) {
+  .myself {
+    min-height: 90vh;
+  }
+
+  .header-ellipse {
+    width: 90%;
+  }
+
+  .name-text {
+    color: whitesmoke !important;
+    font-size: 34px;
+  }
+
+  .dev-text {
+    color: whitesmoke !important;
+    font-size: 53px;
+  }
+
+  .introduce {
+    top: 6vh;
+    left: 32vw;
+    width: min-content;
+  }
+}
+
 
 @media (max-width: 650px) {
   .welcome-body {

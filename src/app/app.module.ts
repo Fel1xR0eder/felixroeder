@@ -11,6 +11,12 @@ import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterLink, RouterModule } from '@angular/router';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ImprintComponent } from './imprint/imprint.component';
+import { DataProtectionComponent } from './data-protection/data-protection.component';
+import {HttpClientModule, HttpClient} from '@angular/common/http';
+
+
 
 @NgModule({
   declarations: [
@@ -21,7 +27,9 @@ import { RouterLink, RouterModule } from '@angular/router';
     SkillsetComponent,
     MyWorkComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
+    ImprintComponent,
+    DataProtectionComponent
   ],
 
   imports: [
@@ -30,7 +38,9 @@ import { RouterLink, RouterModule } from '@angular/router';
     FormsModule,
     ReactiveFormsModule,
     RouterLink,
-    RouterModule
+    RouterModule,
+    HttpClientModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
