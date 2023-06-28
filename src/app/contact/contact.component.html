@@ -19,12 +19,13 @@
         </div>
 
         <form (submit)="sendMail()" ngNativeValidate #myForm class="contact-form">
-            <input id="name" class="input-name" required placeholder="Your name" type="text" #nameField>
-            <input class="input-mail" required placeholder="Your mail" type="email" #mailField>
+            <input id="name" name="name" class="input-name" required placeholder="Your name" type="text" #nameField>
+            <input class="input-mail" name="message" required placeholder="Your mail" type="email" #mailField>
             <textarea required placeholder="Your message" cols="20" rows="10" #messageField></textarea>
             <button #sendButton>Say hi!</button>
         </form>
     </div>
+    
     <img class="work-ellipse-9" src="./../../assets/img/work-ellipse-9.png">
     <img class="work-ellipse-10" src="./../../assets/img/work-ellipse-5.png">
     <div class="up-button" (mouseenter)="changeImage= true" (mouseleave)="changeImage= false">

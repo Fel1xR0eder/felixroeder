@@ -39,6 +39,22 @@ input {
     margin-bottom: 50px;
     font-family: 'montserrat';
     font-size: 16px;
+
+    &:focus {
+        background-color: #5988ff2f;
+
+        &:invalid {
+            background: #f604043f;
+        }
+    }
+
+    // &:invalid {
+    //     background: hsla(0, 90%, 70%, 1);
+    // }
+
+    &:valid {
+        background: #9cf76e40;
+    }
 }
 
 textarea {
@@ -56,6 +72,10 @@ textarea {
     margin-bottom: 50px;
     font-family: 'montserrat';
     font-size: 16px;
+
+    &:focus {
+        background-color: #5988ff2f;
+    }
 }
 
 button {
@@ -75,6 +95,7 @@ button {
     font-size: 23px;
     color: #5988FF;
     transition: all .3s;
+    overflow: hidden;
 
     &::before {
         content: '';
@@ -85,19 +106,19 @@ button {
         height: 100%;
         top: 0;
         filter: blur(20px);
-        transform: translateX(-100px) skewX(-15deg);
+        transform: translateX(-120px) skewX(-15deg);
     }
 
     &::after {
         content: '';
         display: block;
         position: absolute;
-        background: rgba(255, 255, 255, 0.1);
+        background: rgba(255, 255, 255, 0.2);
         width: 30px;
         height: 100%;
         top: 0;
-        filter: blur(5px);
-        transform: translateX(-70px) skewX(-15deg);
+        filter: blur(2px);
+        transform: translateX(-90px) skewX(-15deg);
     }
 
     &:hover {
@@ -109,8 +130,8 @@ button {
 
         &::before,
         &::after {
-            transform: translateX(120px) skewX(-30deg);
-            transition: 0.4s;
+            transform: translateX(130px) skewX(-30deg);
+            transition: 0.3s;
         }
     }
 }

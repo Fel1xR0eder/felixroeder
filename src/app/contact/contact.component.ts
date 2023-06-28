@@ -1,4 +1,4 @@
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild, ViewChildren } from '@angular/core';
 
 @Component({
   selector: 'app-contact',
@@ -11,6 +11,7 @@ export class ContactComponent {
   @ViewChild('mailField') mailField: ElementRef;
   @ViewChild('messageField') messageField: ElementRef;
   @ViewChild('sendButton') sendButton: ElementRef;
+  @ViewChildren('loadingContainer') loadingContainer: ElementRef;
 
   changeImage: boolean;
 
@@ -24,32 +25,55 @@ export class ContactComponent {
     let messageField = this.messageField.nativeElement;
     let sendButton = this.sendButton.nativeElement;
 
+    this.disableFields(nameField, mailField, messageField, sendButton);
+    this.sendPost(nameField, mailField, messageField);
+    this.loadingAnimation();
+    this.hideLoadingAnimation();
+    this.enableFields(nameField, mailField, messageField, sendButton);
+    this.clearAllFields(nameField, mailField, messageField);
+  }
+
+  disableFields(nameField, mailField, messageField, sendButton) {
     nameField.disabled = true;
     mailField.disabled = true;
     messageField.disabled = true;
     sendButton.disbaled = true;
+  }
 
-    // send mail animation
-
-    let fd = new FormData();
-    fd.append('name', nameField.value);
-    fd.append('mail', mailField.value);
-    fd.append('message', messageField.value);
-
-    await fetch('https://felix-roeder.developerakademie.net/send_mail/send_mail.php',
-      {
-        method: 'POST',
-        body: fd
-      }
-    );
-
-    // Text anzeigen - Nachricht gesendet
-
+  enableFields(nameField, mailField, messageField, sendButton) {
     nameField.disabled = false;
     mailField.disabled = false;
     messageField.disabled = false;
     sendButton.disbaled = false;
+  }
 
+  clearAllFields(nameField, mailField, messageField) {
+    nameField.value = '';
+    mailField.value = '';
+    messageField.value = '';
+  }
+
+  loadingAnimation() {
+    this.loadingContainer.nativeElement.style.display = 'block';
+  }
+
+  hideLoadingAnimation() {
+    this.loadingContainer.nativeElement.style.display = 'none';
+  }
+
+  sendPost(nameField, mailField, messageField) {
+
+    console.log(nameField, mailField, messageField);
+
+    // let fd = new FormData();
+    // fd.append('name', nameField.value);
+    // fd.append('mail', mailField.value);
+    // fd.append('message', messageField.value);
+    // await fetch('https://felix-roeder.developerakademie.net/send_mail/send_mail.php',
+    //   {
+    //     method: 'POST',
+    //     body: fd
+    //   });
   }
 
 }

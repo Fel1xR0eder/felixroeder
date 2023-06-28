@@ -37,7 +37,7 @@
 
 .work-ellipse-4 {
     position: absolute;
-    top: 3630px;
+    top: 3800px;
     right: 0;
     z-index: -1;
 }
@@ -89,7 +89,6 @@
     width: 700px;
     object-fit: contain;
     filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.15));
-    cursor: pointer;
 
     &:hover {
         transition: all .5s;
@@ -135,6 +134,7 @@
     font-size: 23px;
     font-family: 'montserrat';
     transition: all .5s;
+    overflow: hidden;
 
     &::before {
         content: '';
@@ -156,7 +156,7 @@
         width: 30px;
         height: 100%;
         top: 0;
-        filter: blur(5px);
+        filter: blur(2px);
         transform: translateX(-70px) skewX(-15deg);
     }
 
@@ -169,17 +169,10 @@
 
         &::before,
         &::after {
-            transform: translateX(90px) skewX(-30deg);
-            transition: 0.4s;
+            transform: translateX(100px) skewX(-30deg);
+            transition: 0.3s;
         }
     }
-
-    // &:hover {
-    //     background: linear-gradient(128.94deg, #5988FF -33.96%, #5988FF 36.71%, #0043F0 112.25%);
-    //     color: #ffffff;
-    //     transform: scale(1.1);
-    //     border: none;
-    // }
 }
 
 .link-container {

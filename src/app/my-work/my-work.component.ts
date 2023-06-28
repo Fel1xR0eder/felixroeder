@@ -19,7 +19,7 @@ export class MyWorkComponent implements OnInit {
             Create and organize tasks using drag and drop 
             functions, assign users and categories.`,
       link: 'https://github.com/Fel1xR0eder/Join-Kanban-Tool',
-      test: ''
+      test: 'https://felix-roeder.developerakademie.net/join/index.html'
     },
     {
       name: 'Sharkie',
@@ -28,7 +28,7 @@ export class MyWorkComponent implements OnInit {
       spec: `Jump, run and throw game based on object-oriented approach.
             Help Pepe to find coins and tabasco salsa to fight against the crazy hen.`,
       link: 'https://github.com/Fel1xR0eder/Sharkie-Game',
-      test: ''
+      test: 'https://felix-roeder.developerakademie.net/sharkie/index.html'
     },
     {
       name: 'Ring of Fire',
@@ -36,7 +36,7 @@ export class MyWorkComponent implements OnInit {
       language: 'Angular | SCSS | HTML | Firebase',
       spec: `Popular drinking game as a webapp based on Angular and Firebase`,
       link: 'https://github.com/Fel1xR0eder/Ringoffire',
-      test: ''
+      test: 'https://ringoffire-7d049.web.app'
     },
     {
       name: 'Simple CRM',

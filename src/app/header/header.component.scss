@@ -18,7 +18,7 @@
 
   &:active {
     transform: scaleY(20px) !important;
-    transition: all 225ms ease-in-out;
+    animation: rotate-center 700ms ease-in-out both;
   }
 }
 
@@ -26,6 +26,7 @@
 .links {
   display: flex;
   align-items: center;
+  z-index: 99;
 
   a {
     padding-left: 30px;
@@ -38,7 +39,7 @@
     &:hover {
       font-weight: bold;
       transition: all .3s;
-      filter: drop-shadow(1px 5px 10px rgba(0, 0, 0, 0.2));
+      filter: drop-shadow(0px 5px 20px rgba(0, 0, 0, 0.2));
       transform: scale(1.1);
     }
   }
@@ -88,6 +89,8 @@
     opacity: 1;
   }
 }
+
+
 
 @media (max-width: 1300px) {
   .header {
