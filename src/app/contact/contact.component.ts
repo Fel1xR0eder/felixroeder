@@ -76,5 +76,4 @@ export class ContactComponent {
     //     body: fd
     //   });
   }
-
 }
