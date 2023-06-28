@@ -11,7 +11,7 @@ export class ContactComponent {
   @ViewChild('mailField') mailField: ElementRef;
   @ViewChild('messageField') messageField: ElementRef;
   @ViewChild('sendButton') sendButton: ElementRef;
-  @ViewChildren('loadingContainer') loadingContainer: ElementRef;
+  @ViewChild('loadingContainer') loadingContainer: ElementRef;
 
   changeImage: boolean;
 
@@ -20,14 +20,15 @@ export class ContactComponent {
   }
 
   async sendMail() {
+    debugger;
     let nameField = this.nameField.nativeElement;
     let mailField = this.mailField.nativeElement;
     let messageField = this.messageField.nativeElement;
     let sendButton = this.sendButton.nativeElement;
 
     this.disableFields(nameField, mailField, messageField, sendButton);
-    this.sendPost(nameField, mailField, messageField);
     this.loadingAnimation();
+    this.sendPost(nameField, mailField, messageField);
     this.hideLoadingAnimation();
     this.enableFields(nameField, mailField, messageField, sendButton);
     this.clearAllFields(nameField, mailField, messageField);
@@ -54,16 +55,16 @@ export class ContactComponent {
   }
 
   loadingAnimation() {
-    this.loadingContainer.nativeElement.style.display = 'block';
+    this.loadingContainer.nativeElement.style.display = 'block !important';
   }
 
   hideLoadingAnimation() {
-    this.loadingContainer.nativeElement.style.display = 'none';
+    this.loadingContainer.nativeElement.style.display = 'none !important';
   }
 
   sendPost(nameField, mailField, messageField) {
 
-    console.log(nameField, mailField, messageField);
+    console.log('log for checking loader');
 
     // let fd = new FormData();
     // fd.append('name', nameField.value);
