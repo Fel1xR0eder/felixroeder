@@ -15,6 +15,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ImprintComponent } from './imprint/imprint.component';
 import { DataProtectionComponent } from './data-protection/data-protection.component';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { MainContainerComponent } from './main-container/main-container.component';
 
 
 
@@ -30,7 +31,8 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
     ContactComponent,
     FooterComponent,
     ImprintComponent,
-    DataProtectionComponent
+    DataProtectionComponent,
+    MainContainerComponent
   ],
 
   imports: [

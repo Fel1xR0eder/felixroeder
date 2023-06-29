@@ -1,7 +1,8 @@
-<div class="header">
+<div [class.darkHeader]="darkMode" class="header">
+
     <img class="logo rotate-in-center" src="../../assets/img/logo.png">
 
-    <div #headerLinks class="links">
+    <div [class.darkLinks]="darkMode" #headerLinks class="links">
         <a href="/">About me</a>
         <a href="#skillset">Skillset</a>
         <a href="#mywork">My Work</a>
