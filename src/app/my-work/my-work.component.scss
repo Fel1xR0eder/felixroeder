@@ -367,7 +367,8 @@
 
     .work-ellipse-4 {
         width: 80px;
-        z-index: 0;
+        z-index: -1;
+        top: 3420px;
     }
 
     .my-work-body {
@@ -379,11 +380,5 @@
     .head-span {
         font-size: 85px;
         padding-bottom: 0;
-    }
-}
-
-@media (max-width: 450px) {
-    .work-ellipse-4 {
-        top: 3230px;
     }
 }

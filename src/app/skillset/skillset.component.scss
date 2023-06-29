@@ -65,11 +65,13 @@
 }
 
 @media (max-width: 650px) {
+
     .skillset {
         padding-left: 20px;
         padding-right: 20px;
     }
     .skill {
+        width: 80px;
 
         img {
             width: unset;
@@ -79,5 +81,11 @@
         p {
             font-size: 19px;
         }
+    }
+}
+
+@media (max-width: 450px) {
+    .skill-body span {
+        font-size: 80px;
     }
 }

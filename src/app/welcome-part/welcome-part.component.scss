@@ -1,7 +1,7 @@
 .welcome-body {
   background: linear-gradient(179.99deg, #FFFFFF 12.89%, #EAF0FF 91.39%);
-  // height: 100vh;
-  // margin-top: -100px;
+  height: 100vh;
+  margin-top: -100px;
   padding-left: 150px;
   padding-right: 150px;
 
@@ -29,11 +29,16 @@
   z-index: 3;
   object-fit: cover;
   max-width: 70vw;
-  width: 70%;
-  top: 95%;
-  min-height: 60vh;
-  max-height: 100vh;
-  height: 94%;
+  // change start
+  top: 100%;
+  max-height: 80vh;
+  // change stop
+
+  // width: 70%;
+  // top: 95%;
+  // min-height: 60vh;
+  // max-height: 100vh;
+  // height: 94%;
 }
 
 .introduce {
@@ -216,14 +221,14 @@
   }
 
   .scroll {
-    left: 71%;
+    left: 74%;
   }
 }
 
 @media (max-width: 700px) and (min-height: 1000px) {
-  .myself {
-    min-height: 90vh;
-  }
+  // .myself {
+  //   min-height: 90vh;
+  // }
 
   .header-ellipse {
     width: 90%;
@@ -288,4 +293,18 @@
     top: 95%;
     height: 74vh;
   }
+
+  .half-ellipse {
+    top: 77%;
+    width: 150px;
+    left: 76%;
+  }
+}
+
+@media (max-width: 450px) {
+  .myself {
+    height: 63vh;
+    width: 100vw;
+  }
+
 }
