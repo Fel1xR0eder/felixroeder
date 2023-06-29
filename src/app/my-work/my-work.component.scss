@@ -44,7 +44,8 @@
 
 .work-ellipse-5 {
     position: absolute;
-    left: 80%
+    left: 93%;
+    top: 4980px;
 }
 
 .work-ellipse-6 {
@@ -378,5 +379,11 @@
     .head-span {
         font-size: 85px;
         padding-bottom: 0;
+    }
+}
+
+@media (max-width: 450px) {
+    .work-ellipse-4 {
+        top: 3230px;
     }
 }

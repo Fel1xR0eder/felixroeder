@@ -182,14 +182,14 @@ button {
 
 .work-ellipse-9 {
     position: absolute;
-    right: 7%;
+    left: 7%;
     top: 5405px
 }
 
 .work-ellipse-10 {
     position: absolute;
     right: 22%;
-    top: 5650px;
+    top: 6200px;
 }
 
 .up-button {
@@ -433,6 +433,7 @@ button {
         display: block;
         top: 5000px;
         z-index: -1;
+        left: 1%;
     }
 
     .work-ellipse-10 {
@@ -470,5 +471,15 @@ button {
         padding-bottom: 20px;
         padding-left: 20px;
         padding-right: 20px;
+    }
+
+    .work-ellipse-9 {
+        left: 1%;
+    }
+
+    .work-ellipse-10 {
+        top: 5240px;
+        right: 5%;
+        left: 0;
     }
 }

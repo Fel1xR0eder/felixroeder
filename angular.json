@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/felixroeder.de",
+            "outputPath": "dist/felixroeder",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -65,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "felixroeder.de:build:production"
+              "browserTarget": "felixroeder:build:production"
             },
             "development": {
-              "browserTarget": "felixroeder.de:build:development"
+              "browserTarget": "felixroeder:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "felixroeder.de:build"
+            "browserTarget": "felixroeder:build"
           }
         },
         "test": {

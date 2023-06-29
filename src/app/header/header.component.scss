@@ -203,7 +203,7 @@
 
   .mobile-navlist {
     display: flex;
-    height: 100vh;
+    height: 70vh;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -233,7 +233,7 @@
 
 @media (max-width: 650px) {
   .header {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
