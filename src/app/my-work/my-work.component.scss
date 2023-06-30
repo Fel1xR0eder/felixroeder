@@ -319,6 +319,7 @@
 
     .work-ellipse-4 {
         width: 110px;
+        top: 3200px;
     }
 
     .work-ellipse-6 {
@@ -380,5 +381,15 @@
     .head-span {
         font-size: 85px;
         padding-bottom: 0;
+    }
+}
+
+@media (max-width: 400px) {
+    .work-ellipse-4 {
+        top: 3360px;
+    }
+
+    .head-span {
+        font-size: 76px;
     }
 }

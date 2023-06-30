@@ -308,7 +308,6 @@
   .myself {
     max-width: 100vw;
     top: 100vh;
-    height: 65vh;
     width: 100vw;
     object-fit: contain;
   }
@@ -321,7 +320,6 @@
 
 @media (max-width: 450px) {
   .myself {
-    height: 63vh;
     width: 100vw;
   }
 

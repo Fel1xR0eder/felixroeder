@@ -35,22 +35,22 @@ body {
 }
 
 ::-webkit-scrollbar {
-    width: 7px;
-    overflow-y: auto;
+    // width: 7px;
+    display: none;
 }
 
 
-::-webkit-scrollbar-track {
-    background: linear-gradient(179.99deg, #FFFFFF 12.89%, #EAF0FF 91.39%);
-}
+// ::-webkit-scrollbar-track {
+//     background: linear-gradient(179.99deg, #FFFFFF 12.89%, #EAF0FF 91.39%);
+// }
 
 
-::-webkit-scrollbar-thumb {
-    background: #5988ff;
-    border-radius: 10px;
-}
+// ::-webkit-scrollbar-thumb {
+//     background: #5988ff;
+//     border-radius: 10px;
+// }
 
 
-::-webkit-scrollbar-thumb:hover {
-    background: #5988ff;
-}
+// ::-webkit-scrollbar-thumb:hover {
+//     background: #5988ff;
+// }
