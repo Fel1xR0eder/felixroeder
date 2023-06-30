@@ -486,20 +486,24 @@ button {
 
 @media (max-width: 450px) {
     .work-ellipse-10 {
-      top: 6400px;
-      left: unset;
-      z-index: 0;
+        top: 6400px;
+        left: unset;
+        z-index: 0;
     }
 }
 
 @media (max-width: 400px) {
     .work-ellipse-10 {
-      display: none;
+        display: none;
     }
 
     .work-ellipse-7 {
         top: 4200px;
         left: unset;
-        right: -7%;
-      }
+        right: 0%;
+    }
+
+    .work-ellipse-9 {
+        top: 4860px;
+    }
 }
