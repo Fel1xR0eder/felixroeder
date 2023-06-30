@@ -3,16 +3,53 @@
     src: url('./assets/font/Montserrat-Regular.ttf');
 }
 
+
 @font-face {
     font-family: baloo;
     src: url('./assets/font/Baloo-Regular.ttf');
 }
 
+
 html {
     scroll-behavior: smooth;
 }
 
+
 body {
     margin: 0;
     max-width: 100%;
+}
+
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2000ms all ease;
+}
+
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+
+::-webkit-scrollbar-track {
+    background: linear-gradient(179.99deg, #FFFFFF 12.89%, #EAF0FF 91.39%);
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: #5988ff;
+    border-radius: 10px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+    background: #5988ff;
 }

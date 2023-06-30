@@ -106,6 +106,28 @@
   z-index: 6;
 }
 
+.opacity-first-animation {
+  animation: opacity-in 3s 500ms both;
+}
+
+.opacity-second-animation {
+  animation: opacity-in 3s 1000ms both;
+}
+
+.opacity-third-animation {
+  animation: opacity-in 3s 1500ms both;
+}
+
+@keyframes opacity-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 .blink-2 {
   animation: blink-2 2000ms infinite both;
 }

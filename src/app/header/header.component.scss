@@ -73,7 +73,7 @@
 }
 
 .rotate-in-center {
-  animation: rotate-in-center 3s .5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: rotate-in-center 3s 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 /* ----------------------------------------------
@@ -99,7 +99,6 @@
     opacity: 1;
   }
 }
-
 
 
 @media (max-width: 1300px) {
