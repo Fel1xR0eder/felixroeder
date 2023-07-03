@@ -1,4 +1,5 @@
 import { Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
+import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -10,12 +11,24 @@ export class HeaderComponent {
   @ViewChild('headerLinks') headerLinks: ElementRef;
 
   public openBurger: boolean = false;
+  // public hashtag: any;
 
   @Input() darkMode = true;
   @Input() blueLogo = true;
 
+    constructor(private router: Router, private route: ActivatedRoute) { }
+  
+    ngOnInit(): void {
+      // this.router.events.subscribe(event => {
+      //   if (event instanceof NavigationEnd) {
+      //     const fragment = this.route.snapshot.fragment;
+      //     this.hashtag = '#' + fragment;
+      //     console.log(this.hashtag);
+      //     this.darkMode = !(this.router.url == '/' || this.hashtag);
+      //   }
+      // });
+    
 
-  ngOnInit(): void {
     let menuBtn = document.getElementById('burgerMenu');
     let mobileMenu = document.getElementById('navbar');
     let mobileMenuLinks = document.querySelectorAll('.mobile-navbar a');

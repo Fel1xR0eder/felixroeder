@@ -102,15 +102,15 @@
 }
 
 .opacity-first-animation {
-  animation: opacity-in 3s 500ms both;
+  animation: opacity-in 2s 200ms both;
 }
 
 .opacity-second-animation {
-  animation: opacity-in 3s 1000ms both;
+  animation: opacity-in 2s 700ms both;
 }
 
 .opacity-third-animation {
-  animation: opacity-in 3s 1500ms both;
+  animation: opacity-in 2s 1000ms both;
 }
 
 @keyframes opacity-in {

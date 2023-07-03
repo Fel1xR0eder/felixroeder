@@ -10,13 +10,12 @@ export class AppComponent {
   title = 'felixroeder';
 
   constructor(public router: Router) { 
-
+    console.log(this.router.url);
   }
 
   ngOnInit() {
     window.addEventListener("scroll", this.reveal); 
   }
-
 
   reveal() {
     let reveals = document.querySelectorAll(".reveal");

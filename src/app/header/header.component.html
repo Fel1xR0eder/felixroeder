@@ -1,17 +1,17 @@
 <div [class.darkHeader]="darkMode" class="header">
 
-    <img class="logo rotate-in-center" src="../../assets/img/logo.png">
+    <img routerLink="/" class="logo" src="./assets/img/logo.png">
 
     <div [class.darkLinks]="darkMode" #headerLinks class="links">
-        <a href="/">About me</a>
+        <a href="#welcome">About me</a>
         <a href="#skillset">Skillset</a>
         <a href="#mywork">My Work</a>
         <a href="#contact">Get in touch</a>
     </div>
 
     <button id="burgerMenu" class="burger-menu">
-        <img *ngIf="!blueLogo" src="./../../assets/img/burger_menu.png">
-        <img *ngIf="blueLogo" class="blueLogo" src="./../../assets/img/burger_menu_black.png">
+        <img *ngIf="!blueLogo" src="./assets/img/burger_menu.png">
+        <img *ngIf="blueLogo" class="blueLogo" src="./assets/img/burger_menu_black.png">
     </button>
 
 </div>
@@ -19,11 +19,10 @@
 <nav id="navbar" class="mobile-navbar">
 
     <div class="mobile-header">
-        <img class="logo-mobile rotate-in-center" src="../../assets/img/logo-blue.png">
+        <img class="logo-mobile rotate-in-center" src="./assets/img/logo-blue.png">
 
         <button id="burgerMenuMobile" class="burger-menu-mobile">
-            <img *ngIf="!blueLogo" src="./../../assets/img/burger_menu.png">
-            <img *ngIf="blueLogo" class="blueLogo" src="./../../assets/img/burger_menu_black.png">
+            <img src="./assets/img/burger_menu.png">
         </button>
     </div>
 

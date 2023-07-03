@@ -13,6 +13,8 @@ export class ContactComponent {
   @ViewChild('messageField') messageField: ElementRef;
   @ViewChild('sendButton') sendButton: ElementRef;
   @ViewChild('loadingContainer') loadingContainer: ElementRef;
+  @ViewChild('mailFeedbackPopup') mailFeedbackPopup: ElementRef;
+  @ViewChild('contact') contact: ElementRef;
 
   changeImage: boolean;
 
@@ -31,6 +33,7 @@ export class ContactComponent {
     this.loadingAnimation();
     this.sendPost(nameField, mailField, messageField);
     this.hideLoadingAnimation();
+    this.mailSentpopup();
     this.enableFields(nameField, mailField, messageField, sendButton);
     this.clearAllFields(nameField, mailField, messageField);
   }
@@ -71,15 +74,27 @@ export class ContactComponent {
 
   async sendPost(nameField, mailField, messageField) {
 
+    let fd = new FormData();
+    fd.append('name', nameField.value);
+    fd.append('mail', mailField.value);
+    fd.append('message', messageField.value);
+    await fetch('https://felix-roeder.developerakademie.net/send_mail/send_mail.php',
+      {
+        method: 'POST',
+        body: fd
+      }
+    );
+  }
 
-     let fd = new FormData();
-     fd.append('name', nameField.value);
-     fd.append('mail', mailField.value);
-     fd.append('message', messageField.value);
-     await fetch('https://felix-roeder.developerakademie.net/send_mail/send_mail.php',
-       {
-         method: 'POST',
-         body: fd
-       });
+  mailSentpopup() {
+    let mailPopup = this.mailFeedbackPopup.nativeElement;
+    let contact = this.contact.nativeElement;
+
+    mailPopup.style.display = "flex";
+    mailPopup.classList.remove("opacity");
+    mailPopup.style.animation = "popup-animation ease-in-out 500ms";
+    contact.style.filter = "blur(8px)";
+    setTimeout(() => mailPopup.style.display = "none", 1500);
+    setTimeout(() => contact.style.filter = "blur(0px)", 1500);
   }
 }

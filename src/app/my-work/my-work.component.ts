@@ -13,7 +13,7 @@ export class MyWorkComponent implements OnInit {
   projects = [
     {
       name: 'Join',
-      img: './../../assets/img/join.png',
+      img: './assets/img/join.png',
       language: 'Javascript | CSS | HTML',
       spec: `Task manager inspired by the Kanban System.
             Create and organize tasks using drag and drop 
@@ -23,7 +23,7 @@ export class MyWorkComponent implements OnInit {
     },
     {
       name: 'Sharkie',
-      img: './../../assets/img/sharkie.png',
+      img: './assets/img/sharkie.png',
       language: 'Javascript OOP | CSS |HTML',
       spec: `Jump, run and throw game based on object-oriented approach.
             Help Pepe to find coins and tabasco salsa to fight against the crazy hen.`,
@@ -32,20 +32,21 @@ export class MyWorkComponent implements OnInit {
     },
     {
       name: 'Ring of Fire',
-      img: './../../assets/img/ring-of-fire.png',
+      img: './assets/img/ring-of-fire.png',
       language: 'Angular | SCSS | HTML | Firebase',
       spec: `Popular drinking game as a webapp based on Angular and Firebase`,
       link: 'https://github.com/Fel1xR0eder/Ringoffire',
       test: 'https://ringoffire-7d049.web.app'
-    },
-    {
-      name: 'Simple CRM',
-      img: './../../assets/img/crm.png',
-      language: 'Angular | SCSS | HTML | Firebase',
-      spec: `A very Simple Customer Relationship Management system working with CRUD functionality.`,
-      link: 'https://github.com/Fel1xR0eder/',
-      test: ''
     }
+    // ,
+    // {
+    //   name: 'DUMMY',
+    //   img: './assets/img/crm.png',
+    //   language: 'Angular | SCSS | HTML | Firebase',
+    //   spec: `A very Simple Customer Relationship Management system working with CRUD functionality.`,
+    //   link: 'https://github.com/Fel1xR0eder/',
+    //   test: ''
+    // }
   ];
 
 }

@@ -31,11 +31,13 @@
   z-index: 7;
   filter: invert(1);
   cursor: pointer;
+}
 
-  &:active {
-    transform: scaleY(20px) !important;
-    animation: rotate-center 700ms ease-in-out both;
-  }
+.logo-blue {
+  width: 70px;
+  height: 70px;
+  z-index: 7;
+  cursor: pointer;
 }
 
 
