@@ -14,5 +14,11 @@
     p {
         word-break: break-all;
     }
+}
 
+@media (max-width: 500px) {
+    .imprint {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 }

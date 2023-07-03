@@ -10,12 +10,11 @@
     </div>
 
     <button id="burgerMenu" class="burger-menu">
-        <img src="./../../assets/img/burger_menu.png">
+        <img *ngIf="!blueLogo" src="./../../assets/img/burger_menu.png">
+        <img *ngIf="blueLogo" class="blueLogo" src="./../../assets/img/burger_menu_black.png">
     </button>
 
 </div>
-
-
 
 <nav id="navbar" class="mobile-navbar">
 
@@ -23,7 +22,8 @@
         <img class="logo-mobile rotate-in-center" src="../../assets/img/logo-blue.png">
 
         <button id="burgerMenuMobile" class="burger-menu-mobile">
-            <img src="./../../assets/img/burger_menu.png">
+            <img *ngIf="!blueLogo" src="./../../assets/img/burger_menu.png">
+            <img *ngIf="blueLogo" class="blueLogo" src="./../../assets/img/burger_menu_black.png">
         </button>
     </div>
 

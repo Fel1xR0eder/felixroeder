@@ -10,15 +10,23 @@ export class HeaderComponent {
   @ViewChild('headerLinks') headerLinks: ElementRef;
 
   public openBurger: boolean = false;
-  
-  @Input() darkMode = true;   // Input = Annotation
+
+  @Input() darkMode = true;
+  @Input() blueLogo = true;
+
 
   ngOnInit(): void {
-    const menuBtn = document.getElementById('burgerMenu');
-    const mobileMenu = document.getElementById('navbar');
-    const mobileMenuLinks = document.querySelectorAll('.mobile-navbar a');
-    const mobileBurger = document.getElementById('burgerMenuMobile');
+    let menuBtn = document.getElementById('burgerMenu');
+    let mobileMenu = document.getElementById('navbar');
+    let mobileMenuLinks = document.querySelectorAll('.mobile-navbar a');
+    let mobileBurger = document.getElementById('burgerMenuMobile');
 
+    this.toggleMobileMenu(menuBtn, mobileMenu, mobileMenuLinks, mobileBurger);
+  }
+
+  
+  toggleMobileMenu(menuBtn, mobileMenu, mobileMenuLinks, mobileBurger) {
+    
     menuBtn?.addEventListener('click', () => {
       menuBtn.classList.toggle('is-active');
       mobileMenu?.classList.toggle('is-active');
@@ -30,6 +38,7 @@ export class HeaderComponent {
         menuBtn?.classList.remove('is-active');
       });
     });
+
     mobileBurger?.addEventListener('click', () => {
       mobileMenu?.classList.remove('is-active');
       menuBtn?.classList.remove('is-active');

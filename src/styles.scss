@@ -18,6 +18,7 @@ html {
 body {
     margin: 0;
     max-width: 100%;
+    overflow-x: hidden;
 }
 
 
@@ -40,17 +41,12 @@ body {
 }
 
 
-// ::-webkit-scrollbar-track {
-//     background: linear-gradient(179.99deg, #FFFFFF 12.89%, #EAF0FF 91.39%);
-// }
+::-webkit-scrollbar-thumb {
+    background: #5988ff;
+    border-radius: 10px;
+}
 
 
-// ::-webkit-scrollbar-thumb {
-//     background: #5988ff;
-//     border-radius: 10px;
-// }
-
-
-// ::-webkit-scrollbar-thumb:hover {
-//     background: #5988ff;
-// }
+::-webkit-scrollbar-thumb:hover {
+    background: #5988ff;
+}

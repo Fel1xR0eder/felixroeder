@@ -3,6 +3,7 @@
   height: 80px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding-top: 20px;
   padding-left: 150px;
   padding-right: 150px;
@@ -12,6 +13,16 @@
 .darkHeader {
   background-color: #5988FF;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+}
+
+.blueLogo {
+  filter: invert(1);
+}
+
+.mobile-burger {
+  filter: invert(1);
+  border: none;
+  background: transparent;
 }
 
 .logo {
