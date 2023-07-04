@@ -69,6 +69,7 @@
         padding-left: 20px;
         padding-right: 20px;
     }
+
     .skill {
         width: 80px;
 
@@ -87,4 +88,22 @@
     .skill-body span {
         font-size: 80px;
     }
+}
+
+@media (max-width: 350px) {
+    .skill-body {
+        padding-bottom: 40px;
+
+        span {
+            font-size: 60px;
+            padding-top: 70px;
+            padding-bottom: 70px;
+        }
+    }
+
+    .skill {
+        width: 60px;
+    }
+
+
 }

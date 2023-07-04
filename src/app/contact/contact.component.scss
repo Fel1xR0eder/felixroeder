@@ -176,7 +176,7 @@ button {
 
 .work-ellipse-8 {
     position: absolute;
-    left: 31%;
+    left: 25%;
     top: 5840px;
     width: 170px;
 }
@@ -190,7 +190,7 @@ button {
 .work-ellipse-10 {
     position: absolute;
     right: 7%;
-    top: 6200px;
+    top: unset;
 }
 
 .up-button {
@@ -524,12 +524,30 @@ button {
     }
 
     .work-ellipse-7 {
-        top: 4460px;
+        top: 4450px;
         left: unset;
         right: 0%;
     }
 
     .work-ellipse-9 {
         top: 5000px;
+    }
+
+    .head-span {
+        font-size: 76px;
+    }
+
+    .subhead-span {
+        font-size: 24px;
+    }
+
+    input {
+        width: 280px;
+    }
+
+    textarea {
+        width: 280px;
+        height: 130px;
+        margin-bottom: 40px;
     }
 }

@@ -1,6 +1,7 @@
 .my-work-body {
     padding-top: 110px;
     padding-bottom: 100px;
+    overflow: hidden;
 
     p {
         font-family: 'montserrat';
@@ -38,7 +39,7 @@
 .work-ellipse-4 {
     position: absolute;
     top: 3800px;
-    right: 0;
+    right: -80px;
     z-index: -1;
 }
 
@@ -319,8 +320,7 @@
     }
 
     .work-ellipse-4 {
-        width: 110px;
-        top: 3200px;
+        display: none;
     }
 
     .work-ellipse-6 {
@@ -386,11 +386,19 @@
 }
 
 @media (max-width: 400px) {
+    .my-work-body {
+        padding-top: 20px;
+    }
+ 
     .work-ellipse-4 {
         top: 3360px;
     }
 
+    .work-ellipse-3 {
+        left: -160px
+    }
+
     .head-span {
-        font-size: 76px;
+        font-size: 66px;
     }
 }

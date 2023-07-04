@@ -190,3 +190,9 @@ a {
         padding-bottom: 70px;
     }
 }
+
+@media (max-width: 350px) {
+    .work-caption {
+        font-size: 50px;
+    }
+}

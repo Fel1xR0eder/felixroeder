@@ -73,7 +73,6 @@ export class ContactComponent {
 
 
   async sendPost(nameField, mailField, messageField) {
-
     let fd = new FormData();
     fd.append('name', nameField.value);
     fd.append('mail', mailField.value);
@@ -94,7 +93,8 @@ export class ContactComponent {
     mailPopup.classList.remove("opacity");
     mailPopup.style.animation = "popup-animation ease-in-out 500ms";
     contact.style.filter = "blur(8px)";
-    setTimeout(() => mailPopup.style.display = "none", 1500);
-    setTimeout(() => contact.style.filter = "blur(0px)", 1500);
+
+    setTimeout(() => mailPopup.style.display = "none", 2000);
+    setTimeout(() => contact.style.filter = "blur(0px)", 2000);
   }
 }

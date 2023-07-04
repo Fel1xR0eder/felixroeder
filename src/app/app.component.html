@@ -1,7 +1,8 @@
 <app-header 
     [darkMode]="router.url == '/imprint'" 
-    [darkMode]="router.url == '/data-protection'"
-    [blueLogo]="router.url !=='/'">
+    [darkMode]="router.url == '/data-protection'" 
+    [blueLogo]="router.url =='/imprint'" 
+    [blueLogo]="router.url =='/data-protection'">
 </app-header>
 
 <router-outlet></router-outlet>
