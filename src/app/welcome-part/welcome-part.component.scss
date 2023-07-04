@@ -29,10 +29,8 @@
   z-index: 3;
   object-fit: cover;
   max-width: 80vw;
-  // change start
   top: 100vh;
-  max-height: 80vh;
-  // change stop
+  max-height: 63vh;
 }
 
 .introduce {
@@ -297,7 +295,7 @@
   }
 
   .introduce {
-    top: 15vh;
+    top: 13vh;
     left: 20px;
     right: 0;
     width: min-content;
@@ -370,5 +368,11 @@
 
   .header-ellipse {
     width: 82%;
+  }
+}
+
+@media(max-height: 500px) {
+  .myself {
+    max-height: 60vh;
   }
 }

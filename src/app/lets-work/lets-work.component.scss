@@ -24,6 +24,7 @@
     font-family: 'baloo';
     line-height: 120%;
     color: #5988FF;
+    text-align: center;
 }
 
 .work-text {
@@ -123,6 +124,8 @@ a {
     .work-caption {
         font-size: 100px;
         width: unset;
+        height: unset;
+        padding-bottom: 30px;
     }
 
     .work-text {

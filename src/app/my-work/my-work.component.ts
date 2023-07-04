@@ -31,10 +31,10 @@ export class MyWorkComponent implements OnInit {
       test: 'https://felix-roeder.developerakademie.net/sharkie/index.html'
     },
     {
-      name: 'Ring of Fire',
+      name: 'Placeholder for the next project',
       img: './assets/img/ring-of-fire.png',
-      language: 'Angular | SCSS | HTML | Firebase',
-      spec: `Popular drinking game as a webapp based on Angular and Firebase`,
+      language: 'Placeholder',
+      spec: `Placeholder for future portfolio projects (slack clone, etc),`,
       link: 'https://github.com/Fel1xR0eder/Ringoffire',
       test: 'https://ringoffire-7d049.web.app'
     }
