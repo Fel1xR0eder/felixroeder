@@ -8,8 +8,6 @@ import { Component, OnInit } from '@angular/core';
 export class MyWorkComponent implements OnInit {
   ngOnInit(): void { }
 
-
-
   projects = [
     {
       name: 'Join',
@@ -19,18 +17,17 @@ export class MyWorkComponent implements OnInit {
             Create and organize tasks using drag and drop 
             functions, assign users and categories.`,
       link: 'https://github.com/Fel1xR0eder/Join-Kanban-Tool',
-      test: 'https://felix-roeder.developerakademie.net/join/index.html'
-    },
-    {
+      test: 'https://felixroeder.de/join/index.html '
+
+    }, {
       name: 'Sharkie',
       img: './assets/img/sharkie.png',
       language: 'Javascript OOP | CSS |HTML',
       spec: `Jump, run and throw game based on object-oriented approach.
-            Help Pepe to find coins and tabasco salsa to fight against the crazy hen.`,
+            Help Sharkie to fight against evil jellyfishes, pufferfishes and the big orca.`,
       link: 'https://github.com/Fel1xR0eder/Sharkie-Game',
-      test: 'https://felix-roeder.developerakademie.net/sharkie/index.html'
-    },
-    {
+      test: 'https://felixroeder.de/sharkie/index.html'
+    }, {
       name: 'Placeholder for the next project',
       img: './assets/img/ring-of-fire.png',
       language: 'Placeholder',
@@ -38,15 +35,5 @@ export class MyWorkComponent implements OnInit {
       link: 'https://github.com/Fel1xR0eder/Ringoffire',
       test: 'https://ringoffire-7d049.web.app'
     }
-    // ,
-    // {
-    //   name: 'DUMMY',
-    //   img: './assets/img/crm.png',
-    //   language: 'Angular | SCSS | HTML | Firebase',
-    //   spec: `A very Simple Customer Relationship Management system working with CRUD functionality.`,
-    //   link: 'https://github.com/Fel1xR0eder/',
-    //   test: ''
-    // }
   ];
-
 }

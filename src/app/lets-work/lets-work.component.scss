@@ -107,6 +107,7 @@ a {
             transition: 0.7s;
         }
     }
+
     // &:hover {
     //     background: linear-gradient(128.94deg, #5988FF -33.96%, #5988FF 36.71%, #0043F0 112.25%);
     //     color: #ffffff;
@@ -194,8 +195,9 @@ a {
     }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 400px) {
     .work-caption {
-        font-size: 50px;
+        font-size: 60px;
+        margin-top: 20px;
     }
 }
