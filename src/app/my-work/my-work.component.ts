@@ -27,13 +27,14 @@ export class MyWorkComponent implements OnInit {
             Help Sharkie to fight against evil jellyfishes, pufferfishes and the big orca.`,
       link: 'https://github.com/Fel1xR0eder/Sharkie-Game',
       test: 'https://felixroeder.de/sharkie/index.html'
-    }, {
-      name: 'Placeholder for the next project',
-      img: './assets/img/ring-of-fire.png',
-      language: 'Placeholder',
-      spec: `Placeholder for future portfolio projects (slack clone, etc),`,
-      link: 'https://github.com/Fel1xR0eder/Ringoffire',
-      test: 'https://ringoffire-7d049.web.app'
-    }
+    } 
+    // ,{
+    //   name: 'Placeholder for the next project',
+    //   img: './assets/img/ring-of-fire.png',
+    //   language: 'Placeholder',
+    //   spec: `Placeholder for future portfolio projects (slack clone, etc),`,
+    //   link: 'https://github.com/Fel1xR0eder/Ringoffire',
+    //   test: 'https://ringoffire-7d049.web.app'
+    // }
   ];
 }
