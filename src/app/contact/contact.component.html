@@ -7,7 +7,7 @@
     </div>
 
     <div style="display: none;" ngNativeValidate #mailFeedbackPopup class="popup opacity">
-        <span>Thank you for your Mail! <br><br> I'll response as soon as possible.</span>
+        <span translate>Thank you for your Mail! <br><br> I'll response as soon as possible.</span>
     </div>
 
     <img class="work-ellipse-7" src="./assets/img/work-ellipse-7.png">
@@ -16,24 +16,24 @@
     <div ngNativeValidate #contact class="contact-me">
         <div class="contact-me-text">
 
-            <span class="head-span">Contact</span>
-            <span class="subhead-span">Got a problem to solve?</span>
-            <span class="contact-me-span">
-                Contact me through this form.
+            <span translate class="head-span">Contact</span>
+            <span translate class="subhead-span">Got a problem to solve?</span>
+            <span translate class="contact-me-span">
+                Contact me through this form. 
                 I am interested in hearing you, knowing your ideas, and contributing to
                 your projects with my work.
             </span>
 
-            <span class="need-me-span">Need a Frontend developer?
-                <span class="fat-span blink-2"> Contact me! </span>
+            <span translate class="need-me-span">Need a Frontend developer?
+                <span translate class="fat-span blink-2"> Contact me! </span>
             </span>
         </div>
 
         <form (submit)="sendMail()" ngNativeValidate #myForm class="contact-form">
-            <input id="name" name="name" class="input-name" required placeholder="Your name" type="text" #nameField>
+            <input id="name" name="name" class="input-name" translate required placeholder="Your name" type="text" #nameField>
             <input class="input-mail" name="message" required placeholder="Your mail" type="email" #mailField>
             <textarea required placeholder="Your message" cols="20" rows="10" #messageField></textarea>
-            <button #sendButton>Say hi!</button>
+            <button translate #sendButton>Say hi!</button>
         </form>
     </div>
 

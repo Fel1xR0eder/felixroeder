@@ -46,7 +46,6 @@ a {
     align-items: center;
     text-decoration: none;
     color: #5988FF;
-    padding: 15px 30px;
 }
 
 .message-button {
@@ -79,7 +78,7 @@ a {
         height: 100%;
         top: 0;
         filter: blur(20px);
-        transform: translateX(-100px) skewX(-15deg);
+        transform: translateX(-110px) skewX(-15deg);
     }
 
     &::after {
@@ -91,7 +90,7 @@ a {
         height: 100%;
         top: 0;
         filter: blur(5px);
-        transform: translateX(-100px) skewX(-15deg);
+        transform: translateX(-110px) skewX(-15deg);
     }
 
     &:hover {
@@ -137,12 +136,13 @@ a {
 @media (max-width: 1200px) {
     .work-caption {
         font-size: 80px;
+        line-height: 80px;
     }
 
     .work-text {
         font-size: 18px;
         height: unset;
-        margin-bottom: 50px;
+        margin-bottom: 20px;
     }
 }
 

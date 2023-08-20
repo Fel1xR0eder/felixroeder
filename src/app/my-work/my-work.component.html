@@ -1,7 +1,7 @@
 <div id="mywork" class="my-work-body">
-    <span class="head-span">My work</span>
+    <span translate class="head-span">My Work</span>
     <img class="work-ellipse-1" src="./assets/img/work-ellipse-1.png">
-    <p>This is a sample of my work - please feel free to try them out.</p>
+    <p translate>Here are examples of my work - check them out</p>
 
     <img class="work-ellipse-2" src="./assets/img/work-ellipse-2.png">
     <img class="work-ellipse-3" src="./assets/img/work-ellipse-3.png">
@@ -13,7 +13,8 @@
             <div class="project-specs">
                 <span class="project-span"> {{ project.name}}</span>
                 <span class="project-lang"> {{project.language}} </span>
-                <span class="project-description"> {{ project.spec }} </span>
+                <span *ngIf="app.language" class="project-description"> {{ project.spec }} </span>
+                <span *ngIf="!app.language" class="project-description"> {{ project.spec_de }} </span>
                 <div class="link-container">
                     <a target="_blank" [href]="project.link"><button class="github">Github</button></a>
                     <a target="_blank" [href]="project.test"><button class="github">Test</button></a>

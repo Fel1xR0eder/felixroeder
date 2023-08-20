@@ -61,6 +61,20 @@
       transform: scale(1.1);
     }
   }
+
+  .language {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    padding-left: 20px;
+    cursor: pointer;
+
+    &:hover {
+      transition: all .3s;
+      filter: drop-shadow(0px 5px 20px rgba(0, 0, 0, 0.2));
+      transform: scale(1.1);
+    }
+  }
 }
 
 .darkLinks a {
@@ -133,7 +147,7 @@
   }
 
   .links a {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
@@ -250,6 +264,10 @@
       font-family: 'montserrat';
       color: #5988FF;
       font-size: 30px;
+    }
+
+    img {
+      margin-right: 60px;
     }
   }
 }

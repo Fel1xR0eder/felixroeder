@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AppComponent } from '../app.component';
 
 @Component({
   selector: 'app-my-work',
@@ -8,6 +9,8 @@ import { Component, OnInit } from '@angular/core';
 export class MyWorkComponent implements OnInit {
   ngOnInit(): void { }
 
+  constructor(public app: AppComponent) { }
+
   projects = [
     {
       name: 'Join',
@@ -16,6 +19,9 @@ export class MyWorkComponent implements OnInit {
       spec: `Task manager inspired by the Kanban System.
             Create and organize tasks using drag and drop 
             functions, assign users and categories.`,
+      spec_de: `Task manager inspiriert nach dem Kanban-System. 
+                Erstellen und organisieren Sie Aufgaben mit Hilfe von Drag-and-Drop-Funktionen,
+                weisen Sie Benutzer und Kategorien zu.`,
       link: 'https://github.com/Fel1xR0eder/Join-Kanban-Tool',
       test: 'https://felixroeder.de/join/index.html '
 
@@ -25,6 +31,8 @@ export class MyWorkComponent implements OnInit {
       language: 'Javascript OOP | CSS |HTML',
       spec: `Jump, run and throw game based on object-oriented approach.
             Help Sharkie to fight against evil jellyfishes, pufferfishes and the big orca.`,
+      spec_de: `Sprung-, Lauf- und Wurfspiel auf der Grundlage eines objektorientierten Ansatzes. 
+                Hilf Sharkie, gegen böse Quallen, Kugelfische und den großen Orca zu kämpfen.`,
       link: 'https://github.com/Fel1xR0eder/Sharkie-Game',
       test: 'https://felixroeder.de/sharkie/index.html'
     } 

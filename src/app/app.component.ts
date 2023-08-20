@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
@@ -9,12 +10,15 @@ import { Router } from '@angular/router';
 export class AppComponent {
   title = 'felixroeder';
 
-  constructor(public router: Router) { 
-    console.log(this.router.url);
+  language: boolean = true;
+
+
+  constructor(public translate: TranslateService, public router: Router) {
+    translate.use('en');
   }
 
   ngOnInit() {
-    window.addEventListener("scroll", this.reveal); 
+    window.addEventListener("scroll", this.reveal);
   }
 
   reveal() {

@@ -3,10 +3,11 @@
     <img routerLink="/" class="logo" src="./assets/img/logo.png">
 
     <div [class.darkLinks]="darkMode" #headerLinks class="links">
-        <a href="#aboutme">About me</a>
-        <a href="#skillset">Skillset</a>
-        <a href="#mywork">My Work</a>
-        <a href="#contact">Get in touch</a>
+        <a translate href="#aboutme">About me</a>
+        <a translate href="#skillset">Skillset</a>
+        <a translate href="#mywork">My Work</a>
+        <a translate href="#contact">Get in touch</a>
+        <img (click)="changeLanguage()" class="language" src="./assets/img/language.png" />
     </div>
 
     <button id="burgerMenu" class="burger-menu">
@@ -27,10 +28,13 @@
     </div>
 
     <ul class="mobile-navlist">
-        <li><a href="#aboutme">About me</a></li>
-        <li><a href="#skillset">Skillset</a></li>
-        <li><a href="#mywork">My Work</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a translate href="#aboutme">About me</a></li>
+        <li><a translate href="#skillset">Skillset</a></li>
+        <li><a translate href="#mywork">My Work</a></li>
+        <li><a translate href="#contact">Contact</a></li>
+        <li>
+            <img (click)="changeLanguage()" class="language" src="./assets/img/language.png" />
+        </li>
     </ul>
     
 </nav>
