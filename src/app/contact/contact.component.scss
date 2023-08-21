@@ -176,8 +176,8 @@ button {
 
 .work-ellipse-8 {
     position: absolute;
-    left: 25%;
-    top: 5840px;
+    left: 21%;
+    top: 325%;
     width: 170px;
 }
 
@@ -328,6 +328,14 @@ button {
     }
 }
 
+@media (max-width: 1900px) {
+.work-ellipse-8 {
+    left: 45%;
+    z-index: -1;
+}
+}
+
+
 @media (max-width: 1550px) {
     .work-ellipse-8,
     .work-ellipse-9 {
@@ -471,7 +479,7 @@ button {
 
     .work-ellipse-10 {
         display: block;
-        top: 5200px;
+        top: 364;
         left: 5%;
         z-index: -1;
     }
@@ -508,7 +516,8 @@ button {
 
     .work-ellipse-9 {
         left: 1%;
-        top: 4950px;
+        top: 345%;
+        z-index: 0;
     }
 
     .work-ellipse-10 {
@@ -537,7 +546,8 @@ button {
     }
 
     .work-ellipse-9 {
-        top: 5000px;
+        left: 6%;
+        top: 358%;
     }
 
     .head-span {

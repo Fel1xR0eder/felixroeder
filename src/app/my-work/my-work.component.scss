@@ -41,7 +41,7 @@
 .work-ellipse-4 {
     position: absolute;
     top: 3800px;
-    right: -150px;
+    right: 0%;
     z-index: 0;
     width: 300px;
 }
@@ -49,13 +49,13 @@
 .work-ellipse-5 {
     position: absolute;
     left: 93%;
-    top: 4980px;
+    // top: 4980px;
 }
 
 .work-ellipse-6 {
     position: absolute;
-    top: 4660px;
-    left: 20px;
+    top: 285%;
+    left: 62%;
     z-index: -1;
 }
 
@@ -134,6 +134,7 @@
     height: 58px;
     border: 2px solid #5988FF;
     color: #5988FF;
+    background-color: #ffffff;
     filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.15));
     border-radius: 10px;
     cursor: pointer;
@@ -185,6 +186,15 @@
     display: flex;
     gap: 20px;
 }
+
+
+
+@media (max-width: 1950px) {
+    .work-ellipse-6 {
+        left: 33%;
+    }
+}
+
 
 @media (max-width: 1350px) {
     .my-work-body {
@@ -248,7 +258,7 @@
     }
 
     .work-ellipse-6 {
-        top: 4100px;
+        top: 270%;
         width: 150px;
         z-index: -1;
     }
@@ -277,7 +287,7 @@
     }
 
     .work-ellipse-6 {
-        top: 4140px;
+        top: 255%;
         z-index: -1;
     }
 
@@ -292,7 +302,8 @@
     }
 
     .work-ellipse-6 {
-        top: 3490px;
+        top: 272%;
+        width: 130px;
         z-index: -1;
     }
 
