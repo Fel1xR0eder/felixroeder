@@ -167,12 +167,12 @@
   }
 }
 
-// @media (max-width: 900px) {
+@media (max-width: 1500px) and (min-height: 700px) {
 
-//   .links a {
-//     padding-right: 10px;
-//   }
-// }
+  .links a {
+    padding-right: 20px;
+  }
+}
 
 @media (max-width: 900px) {
 

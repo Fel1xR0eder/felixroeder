@@ -58,8 +58,8 @@
         height: 30px;
 
         &:hover {
-            transition: all 500ms;
-            transform: translateY(-15px);
+            transition: all 700ms;
+            transform: rotate(360deg);
         }
     }
 }
