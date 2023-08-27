@@ -16,8 +16,12 @@
                 <span *ngIf="app.language" class="project-description"> {{ project.spec }} </span>
                 <span *ngIf="!app.language" class="project-description"> {{ project.spec_de }} </span>
                 <div class="link-container">
-                    <a target="_blank" [href]="project.link"><button class="github">Github</button></a>
-                    <a target="_blank" [href]="project.test"><button class="github">Test</button></a>
+                    <a target="_blank" [href]="project.link">
+                        <button [ngClass]="{'github': !isSafari, 'github-no-safari': isSafari}">Github</button>
+                    </a>
+                    <a target="_blank" [href]="project.test">
+                        <button [ngClass]="{'github': !isSafari, 'github-no-safari': isSafari}">Test</button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -26,5 +30,5 @@
     <img class="work-ellipse-4" src="./assets/img/work-ellipse-4.png">
     <img class="work-ellipse-5" src="./assets/img/work-ellipse-5.png">
     <img class="work-ellipse-6" src="./assets/img/work-ellipse-6.png">
-    
+
 </div>

@@ -6,8 +6,11 @@ import { AppComponent } from '../app.component';
   templateUrl: './my-work.component.html',
   styleUrls: ['./my-work.component.scss']
 })
-export class MyWorkComponent implements OnInit {
-  ngOnInit(): void { }
+export class MyWorkComponent {
+
+  isSafari:any = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+
+
 
   constructor(public app: AppComponent) { }
 
@@ -32,17 +35,18 @@ export class MyWorkComponent implements OnInit {
       spec: `Jump, run and throw game based on object-oriented approach.
             Help Sharkie to fight against evil jellyfishes, pufferfishes and the big orca.`,
       spec_de: `Sprung-, Lauf- und Wurfspiel auf der Grundlage eines objektorientierten Ansatzes. 
-                Hilf Sharkie, gegen böse Quallen, Kugelfische und den großen Orca zu kämpfen.`,
+                Hilf Sharkie gegen böse Quallen, Kugelfische und den großen Orca zu kämpfen.`,
       link: 'https://github.com/Fel1xR0eder/Sharkie-Game',
       test: 'https://felixroeder.de/sharkie/index.html'
-    } 
-    // ,{
-    //   name: 'Placeholder for the next project',
-    //   img: './assets/img/ring-of-fire.png',
-    //   language: 'Placeholder',
-    //   spec: `Placeholder for future portfolio projects (slack clone, etc),`,
-    //   link: 'https://github.com/Fel1xR0eder/Ringoffire',
-    //   test: 'https://ringoffire-7d049.web.app'
-    // }
+    }, {
+      name: 'Slack clone - coming soon',
+      img: './assets/img/slack_clone.png',
+      language: 'Angular | SCSS | Firebase',
+      spec: `Be excited to see my latest group project. A business messenger similar to Slack. It will be released soon`,
+      spec_de: `Sei gespannt auf mein neuestes Gruppenprojekt. Ein Business messenger ähnlich wie Slack.
+                 Es wird bald veröffentlicht `,
+      link: 'https://github.com/MarcelBerlin/Angular-DABubble',
+      test: `alert("not working yet")`
+    }
   ];
 }

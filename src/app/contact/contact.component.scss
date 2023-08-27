@@ -333,6 +333,7 @@ button {
     .work-ellipse-8 {
         left: 45%;
         z-index: -1;
+        top: 346%;
     }
 }
 
@@ -340,13 +341,9 @@ button {
 @media (max-width: 1550px) {
 
     .work-ellipse-8,
-    .work-ellipse-9 {
-        display: none;
-    }
-
+    .work-ellipse-9,
     .work-ellipse-7 {
-        position: absolute;
-        left: 2%;
+        display: none;
     }
 }
 
@@ -354,6 +351,13 @@ button {
 @media (max-width:1350px) {
     .contact-body {
         padding-bottom: 90px;
+    }
+
+    .work-ellipse-7 {
+        position: absolute;
+        left: 2%;
+        top: 338%;
+        z-index: -1;
     }
 
     input {
@@ -543,7 +547,7 @@ button {
 
 @media (max-width: 450px) {
     .work-ellipse-10 {
-        top: 5300px;
+        top: 5100px;
         left: unset;
         z-index: 0;
     }
@@ -580,5 +584,12 @@ button {
         width: 280px;
         height: 130px;
         margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 350px) {
+
+    .work-ellipse-7 {
+        display: none;
     }
 }
