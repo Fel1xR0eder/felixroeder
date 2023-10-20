@@ -11,7 +11,6 @@ export class MyWorkComponent {
   isSafari:any = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
 
 
-
   constructor(public app: AppComponent) { }
 
   projects = [
@@ -26,7 +25,7 @@ export class MyWorkComponent {
                 Erstellen und organisieren Sie Aufgaben mit Hilfe von Drag-and-Drop-Funktionen,
                 weisen Sie Benutzer und Kategorien zu.`,
       link: 'https://github.com/Fel1xR0eder/Join-Kanban-Tool',
-      test: 'https://felixroeder.de/join/index.html '
+      test: 'http://join.felixroeder.de/index.html '
 
     }, {
       name: 'Sharkie',
@@ -37,16 +36,16 @@ export class MyWorkComponent {
       spec_de: `Sprung-, Lauf- und Wurfspiel auf der Grundlage eines objektorientierten Ansatzes. 
                 Hilf Sharkie gegen böse Quallen, Kugelfische und den großen Orca zu kämpfen.`,
       link: 'https://github.com/Fel1xR0eder/Sharkie-Game',
-      test: 'https://felixroeder.de/sharkie/index.html'
+      test: 'http://sharkie.felixroeder.de/index.html'
     }, {
-      name: 'Slack clone - coming soon',
+      name: 'Slack clone - in production',
       img: './assets/img/slack_clone.png',
       language: 'Angular | SCSS | Firebase',
       spec: `Be excited to see my latest group project. A business messenger similar to Slack. It will be released soon`,
       spec_de: `Sei gespannt auf mein neuestes Gruppenprojekt. Ein Business messenger ähnlich wie Slack.
                  Es wird bald veröffentlicht `,
       link: 'https://github.com/MarcelBerlin/Angular-DABubble',
-      test: `alert("not working yet")`
+      test: 'http://dabubble.felixroeder.de/index.html'
     }
   ];
 }
