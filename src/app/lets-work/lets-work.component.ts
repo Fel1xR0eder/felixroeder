@@ -6,5 +6,8 @@ import { Component, ElementRef, ViewChild, ViewChildren } from '@angular/core';
   styleUrls: ['./lets-work.component.scss']
 })
 export class LetsWorkComponent {
+  
+  isSafari:any = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+
 
 }
