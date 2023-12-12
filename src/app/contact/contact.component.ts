@@ -1,4 +1,4 @@
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-contact',
@@ -85,6 +85,7 @@ export class ContactComponent {
     );
   }
 
+  
   mailSentpopup() {
     let mailPopup = this.mailFeedbackPopup.nativeElement;
     let contact = this.contact.nativeElement;
