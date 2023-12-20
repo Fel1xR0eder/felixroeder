@@ -7,7 +7,9 @@
         <a translate href="#skillset">Skillset</a>
         <a translate href="#mywork">My Work</a>
         <a translate href="#contact">Get in touch</a>
-        <p (click)="changeLanguage()" translate>DE?</p>
+        <img class="language-switch" *ngIf='!app.language' src="./assets/img/english.png" (click)="changeLanguage()">
+        <img class="language-switch" *ngIf='app.language' src="./assets/img/german.png" (click)="changeLanguage()">
+
     </div>
 
     <button id="burgerMenu" class="burger-menu">
@@ -33,7 +35,8 @@
         <li><a translate href="#mywork">My Work</a></li>
         <li><a translate href="#contact">Contact</a></li>
         <li>
-            <p (click)="changeLanguage()" translate class="language">DE?</p>
+            <img class="language-switch" *ngIf='!app.language' src="./assets/img/english.png" (click)="changeLanguage()">
+            <img class="language-switch" *ngIf='app.language' src="./assets/img/german.png" (click)="changeLanguage()">
         </li>
     </ul>
     
